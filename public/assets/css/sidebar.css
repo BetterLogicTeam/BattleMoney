@@ -151,7 +151,8 @@ body {
     min-width: 202px;
     max-width: 202px;
     transition: all 0.3s;
-    background-image: radial-gradient(circle farthest-corner at 83.7% 4.3%,rgba(173,0,171,.72) 0,#0d3c71 90%);
+    /* background-image: radial-gradient(circle farthest-corner at 83.7% 4.3%,rgba(173,0,171,.72) 0,#0d3c71 90%); */
+    background-color: #16191C;
     padding-bottom: 0;
     overflow-y: auto;
     overflow-x: hidden;
@@ -266,7 +267,7 @@ a[data-toggle="collapse"] {
 .toggle_btn button{}
 .toggle_btn button:nth-child(1){
     /* background: #a80cb9; */
-    border-color: #fff;
+    border-color: none !important;
 }
 .toggle_btn button:nth-child(2){
     background: #a80cb9;
@@ -459,7 +460,8 @@ a[data-toggle="collapse"] {
 }
 @media only screen and (max-width: 600px) {
     .can_er1{
-        background-image: radial-gradient(circle farthest-corner at 83.7% 4.3%,rgba(173,0,171,.72) 0,#0d3c71 90%);
+        /* background-image: radial-gradient(circle farthest-corner at 83.7% 4.3%,rgba(173,0,171,.72) 0,#0d3c71 90%); */
+        background-color: #16191C !important;
     }
     .sideMobile{
         overflow: scroll;
