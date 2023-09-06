@@ -4,16 +4,20 @@ import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { log } from "react-modal/lib/helpers/ariaAppHider";
 import moment from "moment/moment";
-import "./Dashboard.css"
-import tv from "./tv-solid.svg"
+import "./Dashboard.css";
+import tv from "./tv-solid.svg";
+import { FaWallet } from "react-icons/fa";
+import { BiUser } from "react-icons/bi";
+import Dropdown from "react-bootstrap/Dropdown";
+import Vertical from '../Vertical/Vertical';
+import Vertical2 from '../Vertical2/Vertical2';
 
 //import io from "socket.io-client";
 
 // const SOCKET_URL = "https://live-game-api.nakshtech.info";
 
 function Dashboard() {
-
-  let {name, type}=useParams()
+  let { name, type } = useParams();
   const [data, setData] = useState([]);
 
   const [cricketMatches, setCricketMatches] = useState([]);
@@ -55,13 +59,8 @@ function Dashboard() {
 
   useEffect(() => {
     Live_Match_Api();
-    getAllEvents()
+    getAllEvents();
   }, []);
-
-  
-
-  
-
 
   const getAllEvents = async () => {
     try {
@@ -71,7 +70,7 @@ function Dashboard() {
       // console.log("getAllEvents=>", res.data);
       setevents_Data(res.data);
     } catch (error) {
-      console.log("Something Error in getAllEvents API",error);
+      console.log("Something Error in getAllEvents API", error);
     }
   };
 
@@ -84,43 +83,39 @@ function Dashboard() {
       // console.log("Res", res.data);
       seteventCatagory(res.data);
     } catch (error) {
-      console.log("Something Error in eventCatagory API",error);
+      console.log("Something Error in eventCatagory API", error);
     }
   };
 
-
-  function handleClick(){
-    let eventType1=type??'4'
-    let name1=name??'Cricket'
-    eventCatagory(eventType1)
-    Current_Match(eventType1)
-    setevent_Type(eventType1)
-    setevent_name(name1)
+  function handleClick() {
+    let eventType1 = type ?? "4";
+    let name1 = name ?? "Cricket";
+    eventCatagory(eventType1);
+    Current_Match(eventType1);
+    setevent_Type(eventType1);
+    setevent_name(name1);
   }
-  
 
-  useEffect(()=>{
-    handleClick()
-  },[name,type])
+  useEffect(() => {
+    handleClick();
+  }, [name, type]);
 
   return (
     <div>
-      <Navbar/>
-   
+      <Navbar />
+
       <main className="main_root wrapper">
         {/* <!-- Sidebar start  --> */}
         <nav id="sidebar" className="sidemenu">
           <ul className="list-unstyled components">
-          <button
-                              className="badge badge-info "
-                              style={{fontSize:'16px'}}
-                              >{event_name}</button>
-                              <hr style={{color:'#fff'}}/>
-          {/* <input className="btn btn-info" value={event_name} /> */}
+            <button className="badge badge-info " style={{ fontSize: "16px" }}>
+              {event_name}
+            </button>
+            <hr style={{ color: "#fff" }} />
+            {/* <input className="btn btn-info" value={event_name} /> */}
             <li class="active">
-              {eventCatagorydata?.map((item, index) => (
+              {/* {eventCatagorydata?.map((item, index) => (
                 <ul class="collapse list-unstyled show" id="homeSubmenu">
-                  {/* <span>{event_name}</span */}
                   <li>
                     <a
                       href=""
@@ -142,22 +137,46 @@ function Dashboard() {
                     </a>
                   </li>
                 </ul>
-              ))}
+              ))} */}
             </li>
           </ul>
         </nav>
 
-
-        
         {/* <!-- Sidebar end  -->
 	    <!-----=======body section start=======----> */}
         <div id="content">
           <div className="container">
             <div className="row">
-              <div className="col-md-12">
+              <div className="col-md-9">
+                <div className="First_bar_main">
+                  <div className="First_bar1 ">
+                    <div className="fixure_title">
+                      Upcoming <br /> Fixure
+                    </div>
+                    <div className="sldrr">
+                      <Vertical2/>
+                    </div>
+                  </div>
+
+                  <div className="First_bar2">
+                    <marquee behavior="" direction="left" className="meqi">
+                      Experience the Excitement of Live Sports, Live Casinos,
+                      Virtual Casinos and Fantasy Games On Our Exchange. Play
+                      Now To Win Unlimited.
+                    </marquee>
+                    <div className="bellUpper">
+                      <img
+                        src="https://wver.sprintstaticdata.com/v14/static/front/img/icons/speaker.svg"
+                        alt="#"
+                        className="bells"
+                      />
+                    </div>
+                  </div>
+                </div>
+
                 <div className=" tab-content_bg">
                   <ul className="nav nav-pills" role="tablist">
-                    {events_Data.slice(0,3).map((items, index) => {
+                    {/* {events_Data.slice(0, 3).map((items, index) => {
                       return (
                         <>
                           <li className="nav-item" key={index}>
@@ -170,7 +189,9 @@ function Dashboard() {
                                 Current_Match(items.eventType),
                                 setevent_Type(items.eventType),
                                 setevent_name(items.name),
-                               navigate(`/Dashboard/${items.name}/${items.eventType}`)
+                                navigate(
+                                  `/Dashboard/${items.name}/${items.eventType}`
+                                )
                               )}
                             >
                               {items.name}
@@ -178,12 +199,10 @@ function Dashboard() {
                           </li>
                         </>
                       );
-                    })}
+                    })} */}
                   </ul>
                   {/* <!-----tab pane------>  */}
                   <div className="tab-content">
-                    
-
                     <div className="tab-content">
                       <div id="Home3" className="container tab-pane active">
                         <div className="">
@@ -197,9 +216,15 @@ function Dashboard() {
                                   <th scope="col">OpenDate</th>
                                   <th scope="col"></th>
                                   <th scope="col" className="temp"></th>
-                                  <th scope="col" className="temp">1</th>
-                                  <th scope="col" className="temp">X</th>
-                                  <th scope="col" className="temp">2</th>
+                                  <th scope="col" className="temp">
+                                    1
+                                  </th>
+                                  <th scope="col" className="temp">
+                                    X
+                                  </th>
+                                  <th scope="col" className="temp">
+                                    2
+                                  </th>
                                 </tr>
                               </thead>
                               <tbody className="text-white">
@@ -213,15 +238,15 @@ function Dashboard() {
                                         style={{
                                           color: "#fff",
                                           textDecoration: "none",
-                                          textAlign:'center'
+                                          textAlign: "center",
                                         }}
                                         onClick={() =>
                                           navigate(
                                             event_name === "Tennis"
-                                            ? `/Tennis_Matches?Id=${item.id}&Time=${item.openDate}`
-                                            : event_name === "Soccer"
-                                            ? `/Football_Matches?Id=${item.id}&Time=${item.openDate}`
-                                            :`/Live_Matches?Id=${item.id}&Time=${item.openDate}`
+                                              ? `/Tennis_Matches?Id=${item.id}&Time=${item.openDate}`
+                                              : event_name === "Soccer"
+                                              ? `/Football_Matches?Id=${item.id}&Time=${item.openDate}`
+                                              : `/Live_Matches?Id=${item.id}&Time=${item.openDate}`
                                           )
                                         }
                                       >
@@ -233,11 +258,27 @@ function Dashboard() {
                                         "DD/MM/YYYY h:m:s A"
                                       )}
                                     </td>
-                                    <th scope="row">{(new Date(item.openDate)<= new Date())&&<span className="circle"> </span>}</th>
-                                    <td><img src={tv} alt="" width="25" /></td>
-                                    <th className="temp"><span className="back_space">-</span><span className="back_space1">-</span></th>
-                                    <th className="temp"><span className="back_space">-</span><span className="back_space1">-</span></th>
-                                    <td className="temp"><span className="back_space">-</span><span className="back_space1">-</span></td>
+                                    <th scope="row">
+                                      {new Date(item.openDate) <=
+                                        new Date() && (
+                                        <span className="circle"> </span>
+                                      )}
+                                    </th>
+                                    <td>
+                                      <img src={tv} alt="" width="25" />
+                                    </td>
+                                    <th className="temp">
+                                      <span className="back_space">-</span>
+                                      <span className="back_space1">-</span>
+                                    </th>
+                                    <th className="temp">
+                                      <span className="back_space">-</span>
+                                      <span className="back_space1">-</span>
+                                    </th>
+                                    <td className="temp">
+                                      <span className="back_space">-</span>
+                                      <span className="back_space1">-</span>
+                                    </td>
                                   </tr>
                                 ))}
                               </tbody>
@@ -291,7 +332,6 @@ function Dashboard() {
                               ))}
                             </tbody>
                           </table>
-                         
                         </div>
                       </div>
                     </div>
@@ -467,6 +507,58 @@ function Dashboard() {
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div className="col-lg-3 ps-0">
+                <div className="uPPerBarRT d-flex justify-content-between">
+                  <div className="lftsD d-flex align-items-center gap-3">
+                    <div className="fwlltBck d-flex align-items-center">
+                      <FaWallet className="wallt" />
+                    </div>
+                    <div className="text-end">
+                      <p className="mb-0 writpts">pts: : 1500</p>
+                      <p className="mb-0 writpts">exp: 0</p>
+                    </div>
+                  </div>
+
+                  <div className="rigtsD">
+                    <div className="lftsD">
+                      <div className="fwlltBck d-flex align-items-center">
+                        <BiUser className="wallt" />
+                      </div>
+                      <div className="">
+                        <Dropdown>
+                          <Dropdown.Toggle
+                            id="dropdown-basic"
+                            className="dmoBtnn"
+                          >
+                            Demo
+                          </Dropdown.Toggle>
+
+                          <Dropdown.Menu>
+                            <Dropdown.Item className="drpitm" href="#/action-1">
+                              Account Statement
+                            </Dropdown.Item>
+                            <Dropdown.Item className="drpitm" href="#/action-2">
+                              Current Bets
+                            </Dropdown.Item>
+                            <Dropdown.Item className="drpitm" href="#/action-3">
+                              Casino Results
+                            </Dropdown.Item>
+                            <Dropdown.Item className="drpitm" href="#/action-4">
+                              Set Button Value
+                            </Dropdown.Item>
+                          </Dropdown.Menu>
+                        </Dropdown>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="rightSliDr text-danger">
+                  <>
+                  <Vertical/>
+                  </>
                 </div>
               </div>
             </div>

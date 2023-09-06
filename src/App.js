@@ -64,7 +64,7 @@ function App() {
           <Route path="/Button_value" element={<Button_value />} />
           <Route path="/Level_Income" element={<Level_Income />} />
           <Route path="/Direct_Income" element={<Direct_Income/>} />
-
+          
         </Routes>
       </div>
     </BrowserRouter>

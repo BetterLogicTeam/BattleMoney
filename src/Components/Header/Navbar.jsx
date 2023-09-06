@@ -259,7 +259,7 @@ function Navbar({updateBal}) {
                             Home
                           </a>
                         </li>
-                        {events_Data.slice(0, 3).map((items, index) => {
+                        {/* {events_Data.slice(0, 3).map((items, index) => {
                           return (
                             <>
                               <li className="nav-item" key={index}>
@@ -277,7 +277,7 @@ function Navbar({updateBal}) {
                               </li>
                             </>
                           );
-                        })}
+                        })} */}
                         <li className="nav-item">
                           <a className="nav-link" href="" onClick={Logout}>
                             <span className="fafa">
