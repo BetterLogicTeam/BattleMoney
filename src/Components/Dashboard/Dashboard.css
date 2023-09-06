@@ -1,0 +1,17 @@
+.back_space{
+    padding: 5px 15px;
+background-color: #72BBEF ;
+}
+
+.back_space1{
+    padding: 5px 15px;
+    background-color: #FAA9BA ;
+    }
+    .temp{
+        text-align: center;
+    }
+    .circle{
+        padding: 0 10px;
+    background-color: green;
+    border-radius: 25px;
+    }
