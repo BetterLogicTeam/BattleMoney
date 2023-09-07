@@ -401,6 +401,7 @@ a[data-toggle="collapse"] {
     top: 13px;
     font-size: 16px;
     font-style: italic;   
+    padding-bottom: 15px;
 }
 
 @media (max-width: 768px) {
@@ -423,9 +424,9 @@ a[data-toggle="collapse"] {
     .top_header .Left_items{
         padding-bottom: 13px;
     }
-    .top_marque marquee{
+    /* .top_marque marquee{
         top: 0;
-    }
+    } */
     .header_top_righ .account-setting h3, .header_top_righ .bal h3, .header_top_righ .rules h3 {
         font-size: 14px;
         /* margin-left: 13% !important; */

@@ -163,7 +163,7 @@ a{
 
 @media screen and (max-width: 999px) {
     .header_menu{
-        margin-top: 40px;
+        margin-top: 50px;
         padding-top: 10px;
         padding-bottom: 0;
     }
@@ -201,7 +201,7 @@ a{
     }
 
     .top_marque marquee{
-        top: 26px;
+        top: 40px;
     }
 
     .max_nav_search{

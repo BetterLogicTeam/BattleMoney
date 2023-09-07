@@ -377,6 +377,7 @@ a[aria-expanded="true"] {
   display: flex;
   align-items: center;
   gap: 1rem;
+  width: 40%;
 }
 
 .main_root .dropdown-toggle::after {
@@ -426,6 +427,7 @@ a[aria-expanded="true"] {
 
 .rigtsD {
   background-color: #16191c;
+  width: 40%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -469,7 +471,7 @@ a[aria-expanded="true"] {
   } */
 
   .fwlltBck {
-    width: 28%;
+    /* width: 28%; */
     justify-content: center;
   }
 
@@ -485,5 +487,23 @@ a[aria-expanded="true"] {
 
   .lftsD {
     gap: 0rem;
+  }
+
+  
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .rigtsD{
+    width: 53%;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 950px) {
+  .lftsD{
+    width: 16%;
+  }
+
+  .text-end{
+    padding-left: 10px;
   }
 }
