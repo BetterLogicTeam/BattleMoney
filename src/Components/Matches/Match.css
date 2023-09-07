@@ -118,6 +118,7 @@
 
 ul {
     list-style-type: none;
+    padding-left: 0 !important;
 }
 
 .live {
@@ -222,9 +223,9 @@ ul {
     .streaming{
         display: none ;
     }
-    .Mobile_data {
+    /* .Mobile_data {
         display: none;
-    }
+    } */
 
     .ReactModal__Overlay {
         display: none;
@@ -352,7 +353,7 @@ iframe {
 
 .accordion-body {
     padding: 1rem 1.25rem;
-    background-color: transparent !important;
+    background-color: #16191C !important;
 
 }
 
@@ -755,7 +756,7 @@ background-color: transparent;
 }
 
 .card {
-    background-color: transparent !important;
+    background-color: #495057 !important;
     font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -994,9 +995,9 @@ ul {
     .ng-tns-c85-1{
         font-size: 11px;
     }
-    .Mobile_data {
+    /* .Mobile_data {
         display: none;
-    }
+    } */
 
     .ReactModal__Overlay {
         display: none;
@@ -1146,7 +1147,7 @@ iframe {
 
 .accordion-body {
     padding: 1rem 1.25rem;
-    background-color: transparent !important;
+    background-color: #16191C !important;
 
 }
 

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import dp1 from '../Assets/doll1.png'
-import dp2 from '../Assets/doll2.png'
-import dp3 from '../Assets/doll3.png'
+import dp1 from '../../icoons/doll1.jpg'
+import dp2 from '../../icoons/doll2.jpg'
+import dp3 from '../../icoons/doll3.jpg'
 
 export default class VerticalSwipeToSlide extends Component {
   render() {
