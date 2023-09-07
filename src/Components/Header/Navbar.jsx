@@ -11,7 +11,33 @@ import basketball from "../../icoons/basketball.png";
 import volleyball from "../../icoons/volleyball.png";
 import snooker from "../../icoons/snooker.png";
 import politics from "../../icoons/politics.png";
-
+import cycling from "../../icoons/cycling.png";
+import horse_racing from "../../icoons/horse_racing.png";
+import greyhound_racing from "../../icoons/greyhound_racing.png";
+import ice_hockey from "../../icoons/ice_hockey.png";
+import boxing from "../../icoons/boxing.png";
+import mixed_martial_art from "../../icoons/mixed_martial_art.png";
+import moto_gp from "../../icoons/moto_gp.png";
+import rugby_league from "../../icoons/rugby_league.png";
+import e_games from "../../icoons/e_games.png";
+import futsal from "../../icoons/futsal.png";
+import handball from "../../icoons/handball.png";
+import kabaddi from "../../icoons/kabaddi.png";
+import beach_volleyball from "../../icoons/beach_volleyball.png";
+import golf from "../../icoons/golf.png";
+import chess from "../../icoons/chess.png";
+import moterbikes from "../../icoons/moterbikes.png";
+import badminton from "../../icoons/badminton.png";
+import athelitics from "../../icoons/athelitics.png";
+import sumo from "../../icoons/sumo.png";
+import virtual_sports from "../../icoons/virtual_sports.png";
+import motor_sports from "../../icoons/motor_sports.png";
+import baseball from "../../icoons/baseball.png";
+import rugby_union from "../../icoons/rugby_union.png";
+import dart from "../../icoons/dart.png";
+import american_football from "../../icoons/american_football.png";
+import soccer from "../../icoons/soccer.png";
+import boat_racing from "../../icoons/boat_racing.png";
 function Navbar({ updateBal }) {
   const user = sessionStorage.getItem("user");
   let ress = JSON.parse(user);
@@ -295,7 +321,7 @@ function Navbar({ updateBal }) {
                                     aria-expanded="false"
                                     aria-controls="collapseExample200"
                                   >
-                                    Horse Racing
+                                   <img src={horse_racing} alt="" className="icn_emg"/> Horse Racing
                                   </button>
                                   <div class="collapse" id="collapseExample200">
                                     <div class="card card-body">
@@ -347,7 +373,7 @@ function Navbar({ updateBal }) {
                                     aria-expanded="false"
                                     aria-controls="collapseExample201"
                                   >
-                                    Greyhound Racing
+                                   <img src={greyhound_racing} alt="" className="icn_emg"/> Greyhound Racing
                                   </button>
                                   <div class="collapse" id="collapseExample201">
                                     <div class="card card-body">
@@ -1794,9 +1820,1717 @@ function Navbar({ updateBal }) {
                                   </div>
                                 </div>
                               </li>
+
+
+
+
+                              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExample8hxnice_hockey"
+                  aria-expanded="false"
+                  aria-controls="collapseExample8hxnice_hockey"
+                >
+                 <img src={ice_hockey} alt="" className="icn_emg"/> Ice Hockey
+                </button>
+                <div class="collapse" id="collapseExample8hxnice_hockey">
+                  <div class="card card-body">
+                    <div className="panel-group" id="accordion">
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseOne115ice_hockey"
+                            >
+                              <span className="glyphicon glyphicon-folder-close"></span>
+                              T10 Xl(1)
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseOne115ice_hockey"
+                          className="panel-collapse collapse in"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>Assembly Election 2023</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      News
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Newsletters
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Comments
+                                    </a>
+                                    <span className="badge">42</span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseTwo225ice_hockey"
+                            >
+                              <span className="glyphicon glyphicon-th"></span>
+                              T10 Xl(1)
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseTwo225ice_hockey"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Sydney vs Auk
+                                    </a>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseThree335ice_hockey"
+                            >
+                              <span className="glyphicon glyphicon-user"></span>
+                              T5 Xl
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseThree335ice_hockey"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">GAW 11 vs TKR</a>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseFour445ice_hockey"
+                            >
+                              <span className="glyphicon glyphicon-file"></span>
+                              Virtual Cricket
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseFour445ice_hockey"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">Ind vs Pak</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Bng vs Nz</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Afg vs Nep</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Sa vs Wi</a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExample8hxne_games"
+                  aria-expanded="false"
+                  aria-controls="collapseExample8hxne_games"
+                >
+                 <img src={e_games} alt="" className="icn_emg"/> E Games
+                </button>
+                <div class="collapse" id="collapseExample8hxne_games">
+                  <div class="card card-body">
+                    <div className="panel-group" id="accordion">
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseOne115e_games"
+                            >
+                              <span className="glyphicon glyphicon-folder-close"></span>
+                              T10 Xl(1)
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseOne115e_games"
+                          className="panel-collapse collapse in"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>Assembly Election 2023</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      News
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Newsletters
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Comments
+                                    </a>
+                                    <span className="badge">42</span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseTwo225e_games"
+                            >
+                              <span className="glyphicon glyphicon-th"></span>
+                              T10 Xl(1)
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseTwo225e_games"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Sydney vs Auk
+                                    </a>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseThree335e_games"
+                            >
+                              <span className="glyphicon glyphicon-user"></span>
+                              T5 Xl
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseThree335e_games"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">GAW 11 vs TKR</a>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseFour445e_games"
+                            >
+                              <span className="glyphicon glyphicon-file"></span>
+                              Virtual Cricket
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseFour445e_games"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">Ind vs Pak</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Bng vs Nz</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Afg vs Nep</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Sa vs Wi</a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExample8hxnfutsal"
+                  aria-expanded="false"
+                  aria-controls="collapseExample8hxnfutsal"
+                >
+                 <img src={futsal} alt="" className="icn_emg"/> Futsal
+                </button>
+                <div class="collapse" id="collapseExample8hxnfutsal">
+                  <div class="card card-body">
+                    <div className="panel-group" id="accordion">
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseOne115futsal"
+                            >
+                              <span className="glyphicon glyphicon-folder-close"></span>
+                              T10 Xl(1)
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseOne115futsal"
+                          className="panel-collapse collapse in"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>Assembly Election 2023</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      News
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Newsletters
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Comments
+                                    </a>
+                                    <span className="badge">42</span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseTwo225futsal"
+                            >
+                              <span className="glyphicon glyphicon-th"></span>
+                              T10 Xl(1)
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseTwo225futsal"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Sydney vs Auk
+                                    </a>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseThree335futsal"
+                            >
+                              <span className="glyphicon glyphicon-user"></span>
+                              T5 Xl
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseThree335futsal"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">GAW 11 vs TKR</a>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseFour445futsal"
+                            >
+                              <span className="glyphicon glyphicon-file"></span>
+                              Virtual Cricket
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseFour445futsal"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">Ind vs Pak</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Bng vs Nz</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Afg vs Nep</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Sa vs Wi</a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExample8hxnhandball"
+                  aria-expanded="false"
+                  aria-controls="collapseExample8hxnhandball"
+                >
+                 <img src={handball} alt="" className="icn_emg"/> Handball
+                </button>
+                <div class="collapse" id="collapseExample8hxnhandball">
+                  <div class="card card-body">
+                    <div className="panel-group" id="accordion">
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseOne115handball"
+                            >
+                              <span className="glyphicon glyphicon-folder-close"></span>
+                              T10 Xl(1)
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseOne115handball"
+                          className="panel-collapse collapse in"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>Assembly Election 2023</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      News
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Newsletters
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Comments
+                                    </a>
+                                    <span className="badge">42</span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseTwo225handball"
+                            >
+                              <span className="glyphicon glyphicon-th"></span>
+                              T10 Xl(1)
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseTwo225handball"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Sydney vs Auk
+                                    </a>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseThree335handball"
+                            >
+                              <span className="glyphicon glyphicon-user"></span>
+                              T5 Xl
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseThree335handball"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">GAW 11 vs TKR</a>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseFour445handball"
+                            >
+                              <span className="glyphicon glyphicon-file"></span>
+                              Virtual Cricket
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseFour445handball"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">Ind vs Pak</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Bng vs Nz</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Afg vs Nep</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Sa vs Wi</a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExample8hxnkabaddi"
+                  aria-expanded="false"
+                  aria-controls="collapseExample8hxnkabaddi"
+                >
+                 <img src={kabaddi} alt="" className="icn_emg"/> Kabaddi
+                </button>
+                <div class="collapse" id="collapseExample8hxnkabaddi">
+                  <div class="card card-body">
+                    <div className="panel-group" id="accordion">
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseOne115kabaddi"
+                            >
+                              <span className="glyphicon glyphicon-folder-close"></span>
+                              T10 Xl(1)
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseOne115kabaddi"
+                          className="panel-collapse collapse in"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>Assembly Election 2023</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      News
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Newsletters
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Comments
+                                    </a>
+                                    <span className="badge">42</span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseTwo225kabaddi"
+                            >
+                              <span className="glyphicon glyphicon-th"></span>
+                              T10 Xl(1)
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseTwo225kabaddi"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Sydney vs Auk
+                                    </a>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseThree335kabaddi"
+                            >
+                              <span className="glyphicon glyphicon-user"></span>
+                              T5 Xl
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseThree335kabaddi"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">GAW 11 vs TKR</a>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseFour445kabaddi"
+                            >
+                              <span className="glyphicon glyphicon-file"></span>
+                              Virtual Cricket
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseFour445kabaddi"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">Ind vs Pak</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Bng vs Nz</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Afg vs Nep</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Sa vs Wi</a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExample8hxnkabaddi"
+                  aria-expanded="false"
+                  aria-controls="collapseExample8hxnkabaddi"
+                >
+                 <img src={golf} alt="" className="icn_emg"/> Golf
+                </button>
+                <div class="collapse" id="collapseExample8hxnkabaddi">
+                  <div class="card card-body">
+                    <div className="panel-group" id="accordion">
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseOne115kabaddi"
+                            >
+                              <span className="glyphicon glyphicon-folder-close"></span>
+                              T10 Xl(1)
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseOne115kabaddi"
+                          className="panel-collapse collapse in"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>Assembly Election 2023</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      News
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Newsletters
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Comments
+                                    </a>
+                                    <span className="badge">42</span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseTwo225kabaddi"
+                            >
+                              <span className="glyphicon glyphicon-th"></span>
+                              T10 Xl(1)
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseTwo225kabaddi"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Sydney vs Auk
+                                    </a>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseThree335kabaddi"
+                            >
+                              <span className="glyphicon glyphicon-user"></span>
+                              T5 Xl
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseThree335kabaddi"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">GAW 11 vs TKR</a>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseFour445kabaddi"
+                            >
+                              <span className="glyphicon glyphicon-file"></span>
+                              Virtual Cricket
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseFour445kabaddi"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">Ind vs Pak</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Bng vs Nz</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Afg vs Nep</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Sa vs Wi</a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExample8rugby_league"
+                  aria-expanded="false"
+                  aria-controls="collapseExample8rugby_league"
+                >
+                 <img src={rugby_league} alt="" className="icn_emg"/> Rugby League
+                </button>
+                <div class="collapse" id="collapseExample8rugby_league">
+                  <div class="card card-body">
+                    <div className="panel-group" id="accordion">
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseOne115rugby_league"
+                            >
+                              <span className="glyphicon glyphicon-folder-close"></span>
+                              T10 Xl(1)
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseOne115rugby_league"
+                          className="panel-collapse collapse in"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>Assembly Election 2023</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      News
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Newsletters
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Comments
+                                    </a>
+                                    <span className="badge">42</span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseTwo225rugby_league"
+                            >
+                              <span className="glyphicon glyphicon-th"></span>
+                              T10 Xl(1)
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseTwo225rugby_league"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Sydney vs Auk
+                                    </a>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseThree335rugby_league"
+                            >
+                              <span className="glyphicon glyphicon-user"></span>
+                              T5 Xl
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseThree335rugby_league"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">GAW 11 vs TKR</a>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseFour445rugby_league"
+                            >
+                              <span className="glyphicon glyphicon-file"></span>
+                              Virtual Cricket
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseFour445rugby_league"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">Ind vs Pak</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Bng vs Nz</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Afg vs Nep</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Sa vs Wi</a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExample8boxing"
+                  aria-expanded="false"
+                  aria-controls="collapseExample8boxing"
+                >
+                 <img src={boxing} alt="" className="icn_emg"/> Boxing
+                </button>
+                <div class="collapse" id="collapseExample8boxing">
+                  <div class="card card-body">
+                    <div className="panel-group" id="accordion">
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseOne115boxing"
+                            >
+                              <span className="glyphicon glyphicon-folder-close"></span>
+                              T10 Xl(1)
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseOne115boxing"
+                          className="panel-collapse collapse in"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>Assembly Election 2023</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      News
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Newsletters
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Comments
+                                    </a>
+                                    <span className="badge">42</span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseTwo225boxing"
+                            >
+                              <span className="glyphicon glyphicon-th"></span>
+                              T10 Xl(1)
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseTwo225boxing"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">
+                                      Sydney vs Auk
+                                    </a>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseThree335boxing"
+                            >
+                              <span className="glyphicon glyphicon-user"></span>
+                              T5 Xl
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseThree335boxing"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">GAW 11 vs TKR</a>{" "}
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">
+                          <h4 className="panel-title">
+                            <a
+                              data-toggle="collapse"
+                              data-parent="#accordion"
+                              href="#collapseFour445boxing"
+                            >
+                              <span className="glyphicon glyphicon-file"></span>
+                              Virtual Cricket
+                            </a>
+                          </h4>
+                        </div>
+                        <div
+                          id="collapseFour445boxing"
+                          className="panel-collapse collapse"
+                        >
+                          <div className="panel-body">
+                            <table className="table">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <a href="">Ind vs Pak</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Bng vs Nz</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Afg vs Nep</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="">Sa vs Wi</a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={beach_volleyball} alt="" className="icn_emg"/> Beach Volleyball
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={mixed_martial_art} alt="" className="icn_emg"/> Mixed Martial Arts
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={moto_gp} alt="" className="icn_emg"/> Moto GP
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={chess} alt="" className="icn_emg"/> Chess
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={badminton} alt="" className="icn_emg"/> Badminton
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={cycling} alt="" className="icn_emg"/> Cycling
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={moterbikes} alt="" className="icn_emg"/> moterbikes
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
                             </ul>
                           </div>
                         </li>
+
+
+                        <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={athelitics} alt="" className="icn_emg"/> Athletics
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={basketball} alt="" className="icn_emg"/> Basketball
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={sumo} alt="" className="icn_emg"/> Sumo
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={virtual_sports} alt="" className="icn_emg"/> Virtual Sports
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={motor_sports} alt="" className="icn_emg"/> Motor Sports
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={baseball} alt="" className="icn_emg"/> Baseball
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={rugby_union} alt="" className="icn_emg"/> Rugby Union
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={dart} alt="" className="icn_emg"/> Darts
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={american_football} alt="" className="icn_emg"/> American Football
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={soccer} alt="" className="icn_emg"/> Soccer
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={e_games} alt="" className="icn_emg"/> Esports
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                 <img src={boat_racing} alt="" className="icn_emg"/> Boat Racing
+                </button>
+                <div class="collapse" id="collapseExamplebeach_volleyball">
+                </div>
+              </li>
                       </ul>
                     </div>
                   </div>
