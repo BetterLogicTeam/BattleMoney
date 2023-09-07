@@ -1737,7 +1737,7 @@ function Dashboard() {
         <div id="content">
           <div className="container">
           <div className="row">
-              <div className="col-md-9">
+              <div className="col-md-9 FFl">
                 <div className="First_bar_main">
                   <div className="First_bar1 ">
                     <div className="fixure_title">
@@ -2100,8 +2100,8 @@ function Dashboard() {
                 </div>
               </div>
               <div className="col-lg-3 ps-0">
-                <div className="uPPerBarRT d-flex justify-content-between">
-                  <div className="lftsD d-flex align-items-center gap-3">
+                <div className="uPPerBarRT">
+                  <div className="lftsD">
                     <div className="fwlltBck d-flex align-items-center">
                       <FaWallet className="wallt" />
                     </div>
