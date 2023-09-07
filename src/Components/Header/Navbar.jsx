@@ -94,124 +94,11 @@ function Navbar({ updateBal }) {
     <div>
       <header className="top_header bet_icon_header">
         <div className="container-fluid head_box">
-       
-          <div className="row">
-            <div className="col-md-6 nav_logo_search">
-              <div className="Left_items ">
-                <a href="#">
-                  <img
-                    src="/assets/images/battle_money.png"
-                    alt="logo"
-                    className="nav_logo"
-                  />{" "}
-                </a>
-              </div>
-            </div>
-            <div className="col-md-6 max_nav_search">
-              <div className="header_top_righ absulet">
-                <div className="bal">
-                  <h3>Balance:{data}</h3>
-                  <h3>Exposure: 0</h3>
-                </div>
-                <div className="account-setting">
-                  <h3 className="head_name">{userId}</h3>
-                </div>
-                <div class="dropdown drc1">
-                  <a
-                    class="btn btn-secondary dropdown-toggle menus"
-                    href="#"
-                    role="button"
-                    id="dropdownMenuLink"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    onClick={handleClick}
-                  ></a>
 
-                  <ul
-                    class={`dropdown-menu hit ${dd ? "show" : ""}`}
-                    aria-labelledby="dropdownMenuLink"
-                  >
-                    <li>
-                      <a class="dropdown-item" href="/Dashboard/Cricket/4">
-                        <span className="fafa">
-                          {" "}
-                          {/* <i className="fa fa-home"></i> */}
-                        </span>{" "}
-                        Home
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/Level_Income">
-                        <span className="fafa"> </span> Level Income
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/Direct_Income">
-                        <span className="fafa"> </span> Direct Income
-                      </a>
-                    </li>
-
-                    <li>
-                      <a class="dropdown-item" href="/Statement">
-                        <span className="fafa"> </span> Account Statement
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/ProfitLoss">
-                        <span className="fafa"> </span> Profit Loss Report
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/Bet_History_Drop">
-                        <span className="fafa"> </span> Bet History
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/Unsellected">
-                        <span className="fafa"> </span> Unsetteled Bet
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/Button_value">
-                        <span className="fafa"> </span> Set Button Value
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/Change_Password">
-                        <span className="fafa"> </span> Change Password
-                      </a>
-                    </li>
-                    <hr />
-                    <li>
-                      <a class="dropdown-item" href="" onClick={Logout}>
-                        <span className="fafa">
-                          {" "}
-                          <i className="fa fa-sign-out"></i>
-                        </span>{" "}
-                        Logout
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="top_marque">
-                <marquee
-                  id="marquee1"
-                  direction="left"
-                  scrollamount="4"
-                  onMouseOver={stop}
-                  onMouseOut={start}
-                >
-                  Welcome to demo. For Buy Fund Call Our India Coordinator.
-                  12345
-                </marquee>
-              </div>
-            </div>
-          </div>
-          <div className="row nav_tab_bg">
+        <div className="row nav_tab_bg">
             <div className="col-md-12">
               <div className="header_menu">
-                <nav className="navbar navbar-expand-md navbar-dark toggle_btn">
+                <nav className="navbar navbar-expand-lg navbar-dark toggle_btn">
                   <div
                     className="offcanvas offcanvas-start"
                     tabIndex="-1"
@@ -297,13 +184,55 @@ function Navbar({ updateBal }) {
                       ></button>
 
                       <ul className="list-unstyled components">
-                        <button
+                        {/* <button
                           className="badge badge-info "
                           style={{ fontSize: "16px" }}
                         >
                           {name}
                         </button>
-                        <hr style={{ color: "#fff" }} />
+                        <hr style={{ color: "#fff" }} /> */}
+
+<div className="mob">
+                      <ul className="navbar-nav">
+                        <li className="nav-item">
+                          <a className="nav-link" href="/Dashboard/Cricket/4">
+                            <span className="fafa">
+                              {" "}
+                              <i className="fa fa-home"></i>
+                            </span>{" "}
+                            Home
+                          </a>
+                        </li>
+                        {events_Data.slice(0, 3).map((items, index) => {
+                          return (
+                            <>
+                              <li className="nav-item" key={index}>
+                                <a
+                                  className="nav-link"
+                                  onClick={() =>
+                                    navigate(
+                                      `/Dashboard/${items.name}/${items.eventType}`
+                                    )
+                                  }
+                                  style={{ cursor: "pointer" }}
+                                >
+                                  {items.name}
+                                </a>
+                              </li>
+                            </>
+                          );
+                        })}
+                        <li className="nav-item">
+                          <a className="nav-link" href="" onClick={Logout}>
+                            <span className="fafa">
+                              {" "}
+                              <i className="fa fa-sign-out"></i>
+                            </span>{" "}
+                            Logout
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                         <li className="active sideMobile">
                           {/* {eventCatagorydata?.map((item, index) => (
                             <ul
@@ -1875,6 +1804,121 @@ function Navbar({ updateBal }) {
               </div>
             </div>
           </div>
+       
+          <div className="row">
+            <div className="col-6 nav_logo_search">
+              <div className="Left_items ">
+                <a href="#">
+                  <img
+                    src="/assets/images/battle_money.png"
+                    alt="logo"
+                    className="nav_logo"
+                  />{" "}
+                </a>
+              </div>
+            </div>
+            <div className="col-6 max_nav_search">
+              <div className="header_top_righ absulet">
+                <div className="bal">
+                  <h3>Balance:{data}</h3>
+                  <h3>Exposure: 0</h3>
+                </div>
+                <div className="account-setting">
+                  <h3 className="head_name">{userId}</h3>
+                </div>
+                <div class="dropdown drc1">
+                  <a
+                    class="btn btn-secondary dropdown-toggle menus"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    onClick={handleClick}
+                  ></a>
+
+                  <ul
+                    class={`dropdown-menu hit ${dd ? "show" : ""}`}
+                    aria-labelledby="dropdownMenuLink"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="/Dashboard/Cricket/4">
+                        <span className="fafa">
+                          {" "}
+                          {/* <i className="fa fa-home"></i> */}
+                        </span>{" "}
+                        Home
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/Level_Income">
+                        <span className="fafa"> </span> Level Income
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/Direct_Income">
+                        <span className="fafa"> </span> Direct Income
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item" href="/Statement">
+                        <span className="fafa"> </span> Account Statement
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/ProfitLoss">
+                        <span className="fafa"> </span> Profit Loss Report
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/Bet_History_Drop">
+                        <span className="fafa"> </span> Bet History
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/Unsellected">
+                        <span className="fafa"> </span> Unsetteled Bet
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/Button_value">
+                        <span className="fafa"> </span> Set Button Value
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/Change_Password">
+                        <span className="fafa"> </span> Change Password
+                      </a>
+                    </li>
+                    <hr />
+                    <li>
+                      <a class="dropdown-item" href="" onClick={Logout}>
+                        <span className="fafa">
+                          {" "}
+                          <i className="fa fa-sign-out"></i>
+                        </span>{" "}
+                        Logout
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="top_marque">
+                <marquee
+                  id="marquee1"
+                  direction="left"
+                  scrollamount="4"
+                  onMouseOver={stop}
+                  onMouseOut={start}
+                >
+                  Welcome to demo. For Buy Fund Call Our India Coordinator.
+                  12345
+                </marquee>
+              </div>
+            </div>
+          </div>
+          
           
         </div>
       </header>
