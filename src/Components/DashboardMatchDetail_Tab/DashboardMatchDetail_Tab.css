@@ -214,6 +214,7 @@
 
 .glo{
   width:20% ;
+  color: #aaafb5;
 }
 
 .blubx {
@@ -225,7 +226,7 @@
   justify-content: center;
   align-items: center;
   margin-right: 5px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -262,3 +263,4 @@
 .UpPrdtalay{
   margin-top: 23px;
 }
+

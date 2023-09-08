@@ -3558,9 +3558,109 @@ function Dashboard() {
                 
                 {/* table  */}
 
-                
+                <footer className="footer">
+  {/**/} {/**/}{" "}
+  <div className="support">
+    <div>
+      <div className="w-100 text-center">
+        <b>24X7 Support</b>
+      </div>{" "}
+      <div className="text-center w-100">{/**/}</div>
+    </div>{" "}
+    <div className="footer-social">
+      <a href="https://wa.me/+917517849541" target="_blank">
+        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/whatsapp.png" />
+      </a>{" "}
+      <a
+        href="https://www.facebook.com/Veronica777-111522977707208"
+        target="_blank"
+      >
+        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/facebook.png" />
+      </a>{" "}
+      <a
+        href="https://instagram.com/veronica_7_7_7?igshid=1wz9bjrzbqtdp"
+        target="_blank"
+      >
+        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/instagram.png" />
+      </a>{" "}
+      <a href="https://t.me/veronica777T" target="_blank">
+        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/telegram.png" />
+      </a>{" "}
+      <a href="https://twitter.com/VERONICA77713" target="_blank">
+        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/twitter.png" />
+      </a>{" "}
+      <a
+        href="https://www.youtube.com/channel/UCBNf7RhPm-lKzxwYFTu8vBQ"
+        target="_blank"
+      >
+        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/youtube.png" />
+      </a>{" "}
+      <a href="undefined" target="_blank">
+        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/news.png" />
+      </a>
+    </div>
+  </div>{" "}
+  <div className="footer-menu">
+    <ul>
+      <li>
+        <a href="/about-us" className="" target="_blank">
+          About Us
+        </a>
+      </li>{" "}
+      <li>
+        <a href="/faq" className="">
+          FAQ
+        </a>
+      </li>{" "}
+      <li>
+        <a href="javascript:void(0);">Rules</a>
+      </li>{" "}
+      <li>
+        <a href="/terms-and-conditions" className="" target="_blank">
+          Terms and Conditions
+        </a>
+      </li>{" "}
+      <li>
+        <a href="/responsible-gaming" className="" target="_blank">
+          Responsible Gaming
+        </a>
+      </li>{" "}
+      {/**/}
+    </ul>
+  </div>{" "}
+  <div className="footer-box">
+    <div className="footer-top">
+      <div className="secure-logo">
+        <div>
+          <img src="https://wver.sprintstaticdata.com/v14/static/front/img/ssl.png" />
+        </div>{" "}
+        <div className="ml-2">
+          <b>100% SAFE</b> <div>Protected connection and encrypted data.</div>
+        </div>
+      </div>{" "}
+      <div className="d-inline-block footer-other">
+        <a href="javascript:void(0)" role="button">
+          <img src="https://wver.sprintstaticdata.com/v14/static/front/img/18plus.png" />
+        </a>{" "}
+        <a href="https://www.gamcare.org.uk/" target="_blank">
+          <img src="https://wver.sprintstaticdata.com/v14/static/front/img/gamecare.png" />
+        </a>{" "}
+        <a href="https://www.gamblingtherapy.org/en" target="_blank">
+          <img src="https://wver.sprintstaticdata.com/v14/static/front/img/gt.png" />
+        </a>{" "}
+        {/**/} {/**/}
+      </div>
+    </div>{" "}
+    <div className="footer-bottom">{/**/}</div>
+  </div>{" "}
+  <div className="text-center mt-1 w-100 copyright">
+    © Copyright 2020. All Rights Reserved.
+  </div>{" "}
+  {/**/} {/**/} {/**/}
+</footer>
 
-                <div class="games_images">
+
+                {/* <div class="games_images">
                   <div class="container">
                     <div class="row">
                       <div class="col-md-2">
@@ -3649,10 +3749,10 @@ function Dashboard() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="col-lg-3 ps-0">
-                <div className="uPPerBarRT">
+                {/* <div className="uPPerBarRT">
                   <div className="lftsD">
                     <div className="fwlltBck d-flex align-items-center">
                       <FaWallet className="wallt" />
@@ -3695,7 +3795,7 @@ function Dashboard() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="rightSliDr text-danger">
                   <>

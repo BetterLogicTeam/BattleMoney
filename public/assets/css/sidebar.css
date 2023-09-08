@@ -290,7 +290,7 @@ a[data-toggle="collapse"] {
 */    box-shadow: rgba(0,0,0,.16) 0 2px 5px, rgba(0,0,0,.23) 0 2px 5px;
     margin-bottom: 14px;
     /*background-color: #0d3c71;*/
-    background-color: #1627a8;
+    background-color: #16191c;
 }
 .top_header .Left_items{
     padding: 10px  0 0 0;
@@ -336,6 +336,12 @@ a[data-toggle="collapse"] {
 .header_top_righ .bal{
     padding: 0 19px;
 
+}
+
+@media screen and (max-width: 550px) {
+    .header_top_righ .bal{
+        padding: 0 !important;
+    }
 }
 .header_top_righ .bal h3{}
 .header_top_righ .account-setting{}

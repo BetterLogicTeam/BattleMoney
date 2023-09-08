@@ -267,7 +267,7 @@ a[aria-expanded="true"] {
 }
 
 .table > :not(caption) > * > * {
-  background-color: #495057 !important;
+  background-color: #000305 !important;
 }
 
 .card {
@@ -1073,4 +1073,259 @@ a[aria-expanded="true"] {
   .text-end {
     padding-left: 10px;
   }
+}
+
+
+.css-19kzrtu{
+  padding: 0 !important;
+}
+
+.footer {
+  margin-top: 0;
+  padding: 8px 0;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  background-color: #16191C;
+
+}
+
+.footer .support {
+  width: 100%;
+  display: flex;
+  background-image: linear-gradient(#2c8268, #16191C);
+  padding: 10px;
+  justify-content: center;
+  color: #AAAFB5;
+  border-radius: 0px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.footer .support>div:first-child {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer .support>div:first-child b {
+  font-size: 20px;
+}
+
+.footer .footer-social {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-social img {
+  margin-left: 5px;
+  height: 30px;
+}
+
+.footer-menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  justify-content: center;
+  margin-top: 7px;
+  background-color: #16191C;
+}
+
+.footer ul {
+  display: inline-block;
+}
+
+.footer-menu ul li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.footer-menu ul li {
+  margin: 0 8px;
+  padding: 0 16px;
+  position: relative;
+}
+.footer ul li {
+  float: left;
+}
+
+.footer-menu ul li a {
+  color: #AAAFB5 !important;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.5s;
+  border-bottom: 1px solid #AAAFB5;
+}
+
+.footer-menu ul li::after {
+  position: absolute;
+  content: "";
+  background-color: #AAAFB5;
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+  top: 7px;
+  right: -16px;
+}
+
+.footer-box {
+  width: 90%;
+  margin: 20px auto 0;
+  background-color: #16191C;
+}
+
+.footer-top {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #AAAFB5 !important;
+  padding-bottom: 6px;
+}
+
+.footer-top .secure-logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: normal;
+  color: #AAAFB5 !important;
+}
+
+.copyright{
+  color: #AAAFB5 !important;
+
+}
+
+.footer-top .secure-logo img {
+  max-height: 50px;
+}
+
+.footer-top img {
+  /* max-height: 30px; */
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+.footer-top img {
+  max-height: 30px;
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .gameTitle {
+    color: #aaafb5;
+    font-size: 10px;
+}
+
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+.footer .support>div:first-child b {
+    font-size: 18px;
+}}
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+.footer .footer-social {
+    flex: auto;
+    display: flex;
+    position: relative;
+    top: unset;
+    transform: unset;
+    justify-content: center;
+    align-items: center;
+    right: unset;
+    margin-top: 0;
+}
+
+.footer-menu {
+  margin-top: 0;
+}
+
+.footer-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-box {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-top {
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.footer-top>diV {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer-top>diV {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1279px){
+.footer-social img {
+    margin-left: 5px;
+    height: 20px;
+}
+
+.footer-menu ul {
+  width: 100%;
+}
+
+.footer-menu ul li {
+  padding: 0;
+  margin: 0;
+  width: 47%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.footer-menu ul li a {
+  font-size: 12px;
+}
+
+.footer-menu ul li::after{
+  display: none;
+}
+
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }

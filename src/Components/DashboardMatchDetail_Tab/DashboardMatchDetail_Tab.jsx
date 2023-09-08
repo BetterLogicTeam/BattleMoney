@@ -72,7 +72,7 @@ export default function BasicTabs() {
           <Tab className='tbdtlmc' label={<span className='gameTitle'><GiHockey className='gameIcn'/>Ice Hocky</span>} {...a11yProps(8)} />
         </Tabs>
       </Box>
-      <CustomTabPanel value={value} index={0}>
+      <CustomTabPanel value={value} index={0} className="p-0">
         <DetailsTable/>
       </CustomTabPanel>
 

@@ -3569,7 +3569,9 @@ function Navbar({ updateBal }) {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                     onClick={handleClick}
-                  ></a>
+                    >
+                    Demo
+                    </a>
 
                   <ul
                     class={`dropdown-menu hit ${dd ? "show" : ""}`}
