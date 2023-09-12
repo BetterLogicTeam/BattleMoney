@@ -196,7 +196,7 @@ function Football_Matches() {
           try {
             // if (back == "back") {
             let res = await axios.post(
-              "https://live-game-api.nakshtech.info/PlaceBet",
+              "https://battlemoney-match-api.nakshtech.info/PlaceBet",
               {
                 uid: uId,
                 type: sessionMarket,
@@ -233,7 +233,7 @@ function Football_Matches() {
         ) {
           try {
             let res = await axios.post(
-              "https://live-game-api.nakshtech.info/PlaceBet",
+              "https://battlemoney-match-api.nakshtech.info/PlaceBet",
               {
                 uid: uId,
                 type: sessionMarket,
@@ -280,7 +280,7 @@ function Football_Matches() {
   const PlaceBet_History = async () => {
     try {
       let res = await axios.get(
-        `https://live-game-api.nakshtech.info/BetHistory?id=${uId}`
+        `https://battlemoney-match-api.nakshtech.info/BetHistory?id=${uId}`
       );
       res = res.data.data;
       // console.log("PlaceBet_History", res);
@@ -333,7 +333,7 @@ function Football_Matches() {
   const Result_By_Game = async () => {
     try {
       let res = await axios.post(
-        "https://live-game-api.nakshtech.info/resultbygame",
+        "https://battlemoney-match-api.nakshtech.info/resultbygame",
         {
           gameId: id,
         }
@@ -353,7 +353,7 @@ function Football_Matches() {
     for (let i = 0; i < filteredArray.length; i++) {
       //  console.log("Fillter",filteredArray[i])
       let res = await axios.post(
-        "https://live-game-api.nakshtech.info/Result_Declare",
+        "https://battlemoney-match-api.nakshtech.info/Result_Declare",
         {
           uid: uId,
           matchid: filteredArray[i]["gameId"],

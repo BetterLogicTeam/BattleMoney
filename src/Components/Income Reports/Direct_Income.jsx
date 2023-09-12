@@ -20,7 +20,7 @@ function Direct_Income() {
     const DirectIncome_Api = async () => {
       try {
         let res = await axios.get(
-          `https://live-game-api.nakshtech.info/direct_income_list?uid=${uId}`
+          `https://battlemoney-match-api.nakshtech.info/direct_income_list?uid=${uId}`
         );
         res = res.data.data;
         console.log("DirectIncome", res);

@@ -263,10 +263,10 @@ function Registration() {
                         required
                         maxLength={40}
                       />
-                      {!valid && (
-                          <p className="" style={{ color: "red" }}>
-                            Please enter a valid email address.
-                          </p>
+                        {!valid && (
+                            <p className="" style={{ color: "red" }}>
+                              Please enter a valid email address.
+                            </p>
                         )}
                     </div>
                   </div>

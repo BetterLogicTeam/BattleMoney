@@ -20,7 +20,7 @@ function Unsellected() {
   const UnsettledBet_Api = async () => {
     try {
       let res = await axios.get(
-        `https://live-game-api.nakshtech.info/getUnSetteled_Bet?uid=${uId}`
+        `https://battlemoney-match-api.nakshtech.info/getUnSetteled_Bet?uid=${uId}`
       );
       res = res.data.data;
       console.log("PlaceBet_History", res);

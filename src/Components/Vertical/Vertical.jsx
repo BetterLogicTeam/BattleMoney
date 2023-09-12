@@ -12,8 +12,8 @@ export default class VerticalSwipeToSlide extends Component {
       slidesToShow: 5,
       slidesToScroll: 1,
       vertical: true,
-      autoplay: true,
-      autoplaySpeed: 2000,
+      // autoplay: true,
+      // autoplaySpeed: 2000,
       verticalSwiping: true,
       swipeToSlide: true,
       beforeChange: function(currentSlide, nextSlide) {

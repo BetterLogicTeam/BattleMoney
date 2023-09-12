@@ -26,7 +26,7 @@ import Direct_Income from "./Components/Income Reports/Direct_Income";
 function App() {
   return (
     <BrowserRouter>
-    {/* <Navbar/> */}
+      {/* <Navbar/> */}
       <div className="App_Main">
         <ToastContainer />
         <Toaster position="top-center" reverseOrder={false} />
@@ -63,8 +63,7 @@ function App() {
           <Route path="/Change_Password" element={<Change_Password />} />
           <Route path="/Button_value" element={<Button_value />} />
           <Route path="/Level_Income" element={<Level_Income />} />
-          <Route path="/Direct_Income" element={<Direct_Income/>} />
-
+          <Route path="/Direct_Income" element={<Direct_Income />} />
         </Routes>
       </div>
     </BrowserRouter>

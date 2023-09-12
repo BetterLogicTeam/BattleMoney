@@ -6,18 +6,25 @@ import "./Home.css";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import Login_modal from "../Login_modal/Login_modal";
+import Sign_up_modal from "../Sign_up_modal/Sign_up_modal";
 
 function Home() {
+  const [modalShow, setModalShow] = React.useState(false);
+  const [modalShow1, setModalShow1] = React.useState(false);
+
+  const handle_close = () => {
+    setModalShow(false);
+  };
   const settings = {
     dots: true,
     infinite: true,
     speed: 1000,
     autoplay: true,
-    autoplaySpeed: 3000, 
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
-
 
   return (
     <div>
@@ -29,18 +36,38 @@ function Home() {
                 <img src="assets1/images/logo.png" />
               </a>
               <div class="signBtn">
-                <ul>
+                <ul className="d-flex">
                   <li class="nav-item teli_icon">
-                    <a class="nav-link hover_flip md_width" href="/Login">
+                    <a
+                      class="nav-link hover_flip text-dark md_width main_login"
+                      onClick={() => setModalShow(true)}
+                    >
                       SignIn
                     </a>
                   </li>
+                  <Login_modal
+                    show={modalShow}
+                    onHide={() => setModalShow(false)}
+                  />
                   <li class="nav-item teli_icon">
                     <a
-                      class="nav-link hover_flip md_width"
-                      href="/Registration"
+                      class="nav-link hover_flip md_width text-dark main_login"
+                      onClick={() => setModalShow1(true)}
                     >
                       SignUp
+                    </a>
+                  </li>
+                  <Sign_up_modal
+                    show={modalShow1}
+                    onHide={() => setModalShow1(false)}
+                    setModalShow1={setModalShow1}
+                  />
+                     <li class="nav-item teli_icon ms-1">
+                    <a
+                      class="nav-link hover_flip md_width text-dark main_login"
+                     
+                    >
+                      Demo
                     </a>
                   </li>
                 </ul>
@@ -50,7 +77,7 @@ function Home() {
         </header>
 
         <Slider {...settings}>
-          <div>
+          <div className="">
             <a href="#">
               <img src="assets1/images/banner1.png" />
             </a>
@@ -72,14 +99,13 @@ function Home() {
           </div>
         </Slider>
 
-
         <section class="section_padding">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-12">
                 <div class="casino_heading">
-                  <h2>
-                    OUR LIVE <span>CASINOS</span>
+                  <h2 className="main_asion_heading">
+                    OUR LIVE CASINOS
                   </h2>
                 </div>
               </div>
@@ -376,8 +402,8 @@ function Home() {
             <div class="row">
               <div class="col-md-12">
                 <div class="casino_heading">
-                  <h2>
-                    OUR VIRTUAL <span>CASINO</span>
+                  <h2 className="main_asion_heading">
+                    OUR VIRTUAL CASINO
                   </h2>
                 </div>
               </div>
@@ -446,8 +472,8 @@ function Home() {
             <div class="row">
               <div class="col-md-6">
                 <div class="casino_heading">
-                  <h2>
-                    LIVE <span>CASINOS</span>
+                  <h2 className="main_asion_heading">
+                    LIVE CASINOS
                   </h2>
                 </div>
 
@@ -517,8 +543,8 @@ function Home() {
               </div>
               <div class="col-md-6">
                 <div class="casino_heading">
-                  <h2>
-                    FANTASY <span>GAMES</span>
+                  <h2 className="main_asion_heading">
+                    FANTASY GAMES
                   </h2>
                 </div>
 
@@ -744,8 +770,8 @@ function Home() {
             <div class="row">
               <div class="col-md-12">
                 <div class="casino_heading">
-                  <h2>
-                    <span>SPORTS</span>
+                  <h2 className="main_asion_heading mb-4">
+                    SPORTS
                   </h2>
                 </div>
               </div>
@@ -945,27 +971,26 @@ function Home() {
             <div class="row">
               <div class="col-md-12">
                 <div class="casino_heading">
-                  <h2>
-                    TOP <span>WINNERS</span>
+                  <h2  className="main_asion_heading mb-3" >
+                    TOP WINNERS
                   </h2>
                 </div>
               </div>
 
               <div class="col-md-12">
                 <div id="winner_carousel" class="owl-carousel owl-theme">
-
-<OwlCarousel
-                  loop={true}
-                  margin={100}
-                  nav={false}
-                  autoplay={true}
-                  animateOut={true}
-                  autoplayHoverPause={true}
-                  autoplayTimeout= {4000}
-                  smartSpeed= {9500}
-                  dots={false}
+                  <OwlCarousel
+                    loop={true}
+                    margin={100}
+                    nav={false}
+                    autoplay={true}
+                    animateOut={true}
+                    autoplayHoverPause={true}
+                    autoplayTimeout={4000}
+                    smartSpeed={9500}
+                    dots={false}
                     responsive={{
-                      0: { items: 2},
+                      0: { items: 2 },
                       600: { items: 3 },
                       768: { items: 4 },
                       1199: { items: 6 },
@@ -1124,13 +1149,9 @@ function Home() {
                         </div>
                       </div>
                     </div>
-               
                   </OwlCarousel>
-
                 </div>
               </div>
-
-              
             </div>
           </div>
         </section>
@@ -1142,7 +1163,7 @@ function Home() {
                   <div class="support_item">24X7 Support</div>
                 </div>
                 <div class="col-md-5">
-                  <div class="socialIcon">
+                  {/* <div class="socialIcon ">
                     <ul>
                       <li>
                         <a href="#">
@@ -1175,21 +1196,21 @@ function Home() {
                         </a>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
           <div class="ft_bg">
             <div class="container">
-              <div class="row">
+              <div class="row align-items-center">
                 <div class="col-md-3">
                   <div class="foter_content">
                     <img src="assets1/images/logo.png" />
                   </div>
                 </div>
                 <div class="col-md-9">
-                  <div class="foter_content">
+                  <div class="foter_content ms-0 md-lg-5">
                     <ul>
                       <li>
                         <a href="#">About Us</a>

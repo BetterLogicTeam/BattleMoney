@@ -47,3 +47,39 @@ margin-left: 1.8% !important;
 .slick-prev, .slick-next{
     display: none !important;
 }
+
+
+.main_login{
+    /* display: contents !important; */
+    background-color: #FDCF13 !important;
+    font-size: 12px !important;
+    height: 40px !important;
+    text-transform: uppercase !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    color: black !important;
+    border-radius: 0 !important;
+    cursor: pointer !important;
+}
+
+
+.main_asion_heading{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FDCF13 !important;
+    text-decoration: underline  !important;
+}
+
+
+
+@media only screen and (max-width:600px){
+    .teli_icon a{
+        width: auto !important;
+    }
+    .signBtn {
+        position: relative;
+        right: -2rem;
+    }
+    
+}

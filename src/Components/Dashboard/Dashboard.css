@@ -1329,3 +1329,18 @@ a[aria-expanded="true"] {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
+
+.left_imgesa img{
+  width: 100% !important;
+
+}
+
+
+
+@media screen and (min-width:1100px){
+  .desktop_row_here_testing{
+    margin: 0px !important;
+    width: 1010px !important;
+  }
+}

@@ -16,7 +16,7 @@ function Button_value() {
   const Button_Api = async () => {
     try {
       let res = await axios.get(
-        // `https://live-game-api.nakshtech.info/BetHistory?id=${uId}`
+        // `https://battlemoney-match-api.nakshtech.info/BetHistory?id=${uId}`
         "http://localhost:9876/Get_Button_value_List?uid=339602"
       );
       res = res.data.data;
@@ -56,7 +56,7 @@ function Button_value() {
     try {
       console.log("info",id,label,value)
       let res = await axios.post(
-        `https://live-game-api.nakshtech.info/Update_Button_value_list`,
+        `https://battlemoney-match-api.nakshtech.info/Update_Button_value_list`,
         {
           id: id,
           uid: uId,

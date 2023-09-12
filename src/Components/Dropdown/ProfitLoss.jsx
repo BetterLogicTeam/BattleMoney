@@ -23,7 +23,7 @@ function ProfitLoss() {
 
   const ProfitLossAPI = async () => {
     try {
-      let res = await axios.post(`https://live-game-api.nakshtech.info/account_statement`,{
+      let res = await axios.post(`https://battlemoney-match-api.nakshtech.info/account_statement`,{
           "uid":uId,
           "fromDate":fromdate,
           "toDate":todate

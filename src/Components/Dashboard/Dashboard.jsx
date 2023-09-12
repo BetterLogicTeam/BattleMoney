@@ -91,7 +91,7 @@ function Dashboard() {
     // console.log("EventTypeIDCurrent_Match", EventTypeID);
     try {
       let res = await axios.get(
-        `https://live-game-api.nakshtech.info/GetAllCurrentMatches?eventTypeID=${EventTypeID}`
+        `https://battlemoney-match-api.nakshtech.info/GetAllCurrentMatches?eventTypeID=${EventTypeID}`
       );
       // res = res.data.data;
       // seteventCatagory_Data(res.data.data);
@@ -3477,7 +3477,7 @@ function Dashboard() {
 	    <!-----=======body section start=======----> */}
         <div id="content">
           <div className="container">
-          <div className="row">
+          <div className="row desktop_row_here_testing">
               <div className="col-md-9 FFl">
                 <div className="First_bar_main">
                   <div className="First_bar1 ">
@@ -3751,7 +3751,7 @@ function Dashboard() {
                   </div>
                 </div> */}
               </div>
-              <div className="col-lg-3 ps-0">
+              <div className="col-lg-3 left_imgesa ps-0">
                 {/* <div className="uPPerBarRT">
                   <div className="lftsD">
                     <div className="fwlltBck d-flex align-items-center">

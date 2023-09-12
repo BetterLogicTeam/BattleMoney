@@ -50,6 +50,7 @@ function DashboardMatch_Slider() {
           </SwiperSlide>
           <SwiperSlide>
             <div>
+          
                 <img src="https://sitethemedata.com/sitethemes/common/front/banners/1692077913595.jpg" alt="" className="w-100" />
             </div>
           </SwiperSlide>

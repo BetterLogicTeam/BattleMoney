@@ -28,7 +28,7 @@ function Bet_History_Drop() {
   const PlaceBet_History = async () => {
     try {
       let res = await axios.get(
-        `https://live-game-api.nakshtech.info/BetHistory?id=${uId}`
+        `https://battlemoney-match-api.nakshtech.info/BetHistory?id=${uId}`
       );
       res = res.data.data;
       // console.log("PlaceBet_History", res);
@@ -42,7 +42,7 @@ function Bet_History_Drop() {
     // console.log("EventTypeIDCurrent_Match", EventTypeID);
     try {
       let res = await axios.get(
-        `https://live-game-api.nakshtech.info/GetAllCurrentMatches?eventTypeID=${EventTypeID}`
+        `https://battlemoney-match-api.nakshtech.info/GetAllCurrentMatches?eventTypeID=${EventTypeID}`
       );
       // res = res.data.data;
       seteventCatagory_Data(res.data.data);

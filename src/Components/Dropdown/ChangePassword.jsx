@@ -34,7 +34,7 @@ function Change_Password() {
       return;
     }
    
-        let res=await axios.post(`https://live-game-api.nakshtech.info/Update_pass`,{
+        let res=await axios.post(`https://battlemoney-match-api.nakshtech.info/Update_pass`,{
           "uid":uId,
           "old_password":old,
           "new_password":newpass

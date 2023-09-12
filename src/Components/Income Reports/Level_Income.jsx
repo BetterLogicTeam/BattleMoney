@@ -20,7 +20,7 @@ function Level_Income() {
     const LevelIncome_Api = async () => {
       try {
         let res = await axios.get(
-          `https://live-game-api.nakshtech.info/level_income_list?uid=${uId}`
+          `https://battlemoney-match-api.nakshtech.info/level_income_list?uid=${uId}`
         );
         res = res.data.data;
         console.log("LevelIncome_Api", res);

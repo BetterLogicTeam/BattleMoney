@@ -19,7 +19,7 @@ function AllSide() {
         // console.log("EventTypeIDCurrent_Match", EventTypeID);
         try {
           let res = await axios.get(
-            `https://live-game-api.nakshtech.info/GetAllCurrentMatches?eventTypeID=${EventTypeID}`
+            `https://battlemoney-match-api.nakshtech.info/GetAllCurrentMatches?eventTypeID=${EventTypeID}`
           );
           // res = res.data.data;
           seteventCatagory_Data(res.data.data);
