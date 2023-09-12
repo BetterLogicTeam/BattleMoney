@@ -7,7 +7,7 @@ import swal from "sweetalert";
 import { toast } from "react-toastify";
 import Login_modal from "../Login_modal/Login_modal";
 
-export default function Sign_up_modal(props) {
+export default function Sign_up_modal(props,{setModalShow1}) {
   const [mobile, setMobile] = useState("");
   const Mobile_Data = (event) => {
     const newValue = event.target.value.replace(/[^0-9]/gi, "");
@@ -265,7 +265,6 @@ export default function Sign_up_modal(props) {
                   <label htmlFor="username">Country</label> <br />
                   <select
                     name="gender"
-                   
                     id="countries"
                     className="input_login"
                     value={country}
@@ -310,23 +309,24 @@ export default function Sign_up_modal(props) {
                     Gambling Therapy{" "}
                   </span>
                 </p> */}
-                {/* <a className="text-decoration-none" href="/"> */}
+                {/* <a className="text-decoration-none" href="/"> */}{" "}
+                <button
+                  className="login_btn mt-3"
+                  onClick={() => Registration_APi()}
+                >
                   {" "}
-                  <button
-                    className="login_btn mt-3"
-                    onClick={() => Registration_APi()}
-                  >
-                    {" "}
-                    Sign up
-                  </button>
+                  Sign up
+                </button>
                 {/* </a> */}
                 <p className="term_cond">
-                  Already have an account{" "}
-                  <span className="green_hun"    onClick={() => (setModalShow(true),props.setModalShow1(false))}> Sign In </span>
-                  <Login_modal
-                    show={modalShow}
-                    onHide={() => setModalShow(false)}
-                  />
+                  Already have an account
+                  <span
+                    className="green_hun"
+                    onClick={() => (props.onHide(),setModalShow(true))}
+                  >
+                    {" "}
+                    Sign In{" "}
+                  </span>
                 </p>
               </div>
             </div>
@@ -336,6 +336,7 @@ export default function Sign_up_modal(props) {
       </Modal.Footer> */}
         </Modal>
       </div>
+      <Login_modal show={modalShow} onHide={() => setModalShow(false)} />
     </div>
   );
 }
