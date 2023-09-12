@@ -6,6 +6,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
+import dash from "../Assets/dashs.jpg"
+import dash1 from "../Assets/dash1.jpg"
+import dash2 from "../Assets/dash2.png"
 // import './styles.css';
 
 function DashboardMatch_Slider() {
@@ -40,43 +43,43 @@ function DashboardMatch_Slider() {
         className="mySwiper">
           <SwiperSlide>
             <div>
-                <img src="https://sitethemedata.com/sitethemes/common/front/banners/1693257729678.png" alt="" className="w-100" />
+                <img src={dash} alt="" className="w-100" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-                <img src="https://sitethemedata.com/sitethemes/common/front/banners/1694121756906.png" alt="" className="w-100" />
+                <img src={dash1} alt="" className="w-100" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
           
-                <img src="https://sitethemedata.com/sitethemes/common/front/banners/1692077913595.jpg" alt="" className="w-100" />
+                <img src={dash2} alt="" className="w-100" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-                <img src="	https://sitethemedata.com/sitethemes/common/front/banners/1692077913600.jpg" alt="" className="w-100" />
+                <img src={dash} alt="" className="w-100" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-                <img src="https://sitethemedata.com/sitethemes/common/front/banners/1694119610981.jpg" alt="" className="w-100" />
+                <img src={dash1} alt="" className="w-100" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-                <img src="	https://sitethemedata.com/sitethemes/common/front/banners/1692077913604.jpg" alt="" className="w-100" />
+                <img src={dash2} alt="" className="w-100" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-                <img src="	https://sitethemedata.com/sitethemes/common/front/banners/1693257729678.png" alt="" className="w-100" />
+                <img src={dash} alt="" className="w-100" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-            <img src="https://sitethemedata.com/sitethemes/common/front/banners/1694119610981.jpg" alt="" className="w-100" />
+            <img src={dash1} alt="" className="w-100" />
             </div>
           </SwiperSlide>
         </Swiper>

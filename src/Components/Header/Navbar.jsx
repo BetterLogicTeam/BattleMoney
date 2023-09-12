@@ -121,8 +121,8 @@ function Navbar({ updateBal }) {
       <header className="top_header bet_icon_header">
         <div className="container-fluid head_box">
 
-        <div className="row nav_tab_bg">
-            <div className="col-md-12">
+        <div className="row  ">
+            <div className="col-md-12 text-center">
               <div className="header_menu">
                 <nav className="navbar navbar-expand-lg navbar-dark toggle_btn">
                   <div
@@ -175,7 +175,7 @@ function Navbar({ updateBal }) {
                               {" "}
                               <i className="fa fa-sign-out"></i>
                             </span>{" "}
-                            Logout
+                            Logout 
                           </a>
                         </li>
                       </ul>

@@ -270,8 +270,9 @@ a[data-toggle="collapse"] {
     border-color: none !important;
 }
 .toggle_btn button:nth-child(2){
-    background: #a80cb9;
-    border-color: #fff;
+    background: none !important;
+    border-color: none !important;
+    border: none !important;
 }
 
 
