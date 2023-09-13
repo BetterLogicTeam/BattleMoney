@@ -824,6 +824,8 @@ a[aria-expanded="true"] {
 .First_bar1 {
   display: flex;
   gap: 10px;
+  background-color: #16191C;
+  align-items: center;
 }
 
 .First_bar2 {
@@ -850,6 +852,8 @@ a[aria-expanded="true"] {
   display: flex;
   justify-content: space-between;
   margin-bottom: 8px;
+  gap: 10px;
+ 
 }
 
 .bells {
@@ -1089,7 +1093,7 @@ a[aria-expanded="true"] {
   flex-wrap: wrap;
   align-items: center;
   position: relative;
-  background-color: #16191C;
+  /* background-color: #16191C; */
 
 }
 
@@ -1136,7 +1140,7 @@ a[aria-expanded="true"] {
   padding: 5px;
   justify-content: center;
   margin-top: 7px;
-  background-color: #16191C;
+  /* background-color: #16191C; */
 }
 
 .footer ul {
@@ -1179,7 +1183,7 @@ a[aria-expanded="true"] {
 .footer-box {
   width: 90%;
   margin: 20px auto 0;
-  background-color: #16191C;
+  /* background-color: #16191C; */
 }
 
 .footer-top {
@@ -1338,9 +1342,102 @@ a[aria-expanded="true"] {
 
 
 
-@media screen and (min-width:1100px){
+@media screen and (min-width:1100px) and (max-width:1300px){
   .desktop_row_here_testing{
     margin: 0px !important;
-    width: 1010px !important;
+    width: 1020px !important;
+  }
+}
+
+
+
+
+/* ALL THE CSS OF NEW DASHBOARD IS HERE  */
+
+.upper_links_dashboR{
+  background-color: #3c444b !important;
+  position: fixed;
+  top: 0;
+  height: 34px;
+  justify-content: center;
+  align-items: center !important;
+  display: flex;
+  width: 100%;
+  z-index: 100;
+}
+
+.li_upper_dash{
+  font-size: 14px;
+
+  font-weight: bold;
+  transition: all 0.5s;
+  margin-top: 10px !important;
+  margin: 0 16px;
+  padding: 0 16px;
+  color: #AAAFB5 !important;
+  position: relative;
+}
+
+
+.li_upper_dash::after{
+  position: absolute;
+  content: "";
+  background-color: #AAAFB5 !important  ;
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+  top: 7px;
+  right: -16px;
+}
+
+
+.margin_top{
+  margin-top: 3rem !important;
+}
+
+
+.wallet{
+  background-color: #16191C;
+  height: 56px;
+  cursor: pointer !important;
+  padding:  5px 5px !important;
+}
+
+.wallet span {
+  color: #AAAFB5;
+}
+
+.icons_daskPDa{
+  background-color: #3c444b;
+  color: #AAAFB5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+
+.New_das_bord_drop{
+  background: transparent !important;
+  color: #AAAFB5;
+  width: 80px !important;
+
+}
+
+.New_das_bord_drop:hover{
+  color: #aaafb5;
+}
+
+.New_das_bord_drop:focus{
+  color: #aaafb5 !important;
+  border: none !important;
+}
+
+
+
+
+@media only screen and (min-width:999px) and (max-width:1100px){
+  .desktop_row_here_testing{
+    width: 97% !important;
   }
 }

@@ -214,3 +214,11 @@ a{
         display: flex;
     }
 }
+
+
+
+.mobile_version_pts{
+    font-size: 12px !important;
+    font-weight: bold !important;
+    color: #eee !important;
+}

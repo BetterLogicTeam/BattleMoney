@@ -42,19 +42,18 @@ import dart from "../../icoons/dart.png";
 import american_football from "../../icoons/american_football.png";
 import soccer from "../../icoons/soccer.png";
 import boat_racing from "../../icoons/boat_racing.png";
-import { FaWallet } from "react-icons/fa";
+import { FaUserAlt, FaWallet } from "react-icons/fa";
 import { BiUser } from "react-icons/bi";
 import Dropdown from "react-bootstrap/Dropdown";
-import Vertical from '../Vertical/Vertical';
-import Vertical2 from '../Vertical2/Vertical2';
+import Vertical from "../Vertical/Vertical";
+import Vertical2 from "../Vertical2/Vertical2";
 import { IoIosTennisball } from "react-icons/io";
 import { FaBasketballBall } from "react-icons/fa";
 import { MdSportsCricket } from "react-icons/md";
 import { BiFootball } from "react-icons/bi";
 import DashboardMatch_Slider from "../DashboardMatch_Slider/DashboardMatch_Slider";
 import DashboardMatchDetail_Tab from "../DashboardMatchDetail_Tab/DashboardMatchDetail_Tab";
-
-
+import logo from "../Assets/battle_money.png";
 
 //import io from "socket.io-client";
 
@@ -148,41 +147,26 @@ function Dashboard() {
     <div>
       <Navbar />
 
-      <main className="main_root wrapper">
-        {/* <!-- Sidebar start  --> */}
+      {/* desktop upper links  */}
+      <div className="upper_links_dashboR d-none d-lg-block">
+        <ul className="d-flex justify-content-center ps-0">
+          <li className="li_upper_dash">Lottery</li>
+          <li className="li_upper_dash">SportBook1</li>
+          <li className="li_upper_dash">Exchange</li>
+          <li className="li_upper_dash">Live Casino</li>
+          <li className="li_upper_dash">Slot</li>
+          <li className="li_upper_dash">Fantasy Games</li>
+        </ul>
+      </div>
+
+      {/* ends here  */}
+
+      <div className="main_root margin_top wrapper">
         <nav id="sidebar" className="sidemenu">
-          {/* <ul className="list-unstyled components">
-            <button className="badge badge-info " style={{ fontSize: "16px" }}>
-              {event_name}
-            </button>
-            <hr style={{ color: "#fff" }} />
-            <li class="active">
-              {eventCatagorydata?.map((item, index) => (
-                <ul class="collapse list-unstyled show" id="homeSubmenu">
-                  <li>
-                    <a
-                      href=""
-                      style={{
-                        color: "#fff",
-                        textDecoration: "none",
-                      }}
-                      onClick={() =>
-                        navigate(
-                          event_name === "Tennis"
-                            ? `/Tennis/${item.competition.id}/${event_Type}`
-                            : event_name === "Soccer"
-                            ? `/Soccer/${item.competition.id}/${event_Type}`
-                            : `/scoreboard/${item.competition.id}/${event_Type}`
-                        )
-                      }
-                    >
-                      {item?.competition?.name}
-                    </a>
-                  </li>
-                </ul>
-              ))}
-            </li>
-          </ul> */}
+          <div className="text-center py-3">
+            <img src={logo} className="w-50" alt="" />
+          </div>
+
           <div className="search-box">
             <div className="form-group">
               <input
@@ -205,248 +189,224 @@ function Dashboard() {
             </h5>
 
             <ul>
-              
-
               <ul>
-              <li>
-                <button
-                  class="btn ml-3 hxn_btn"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseExample200hxn"
-                  aria-expanded="false"
-                  aria-controls="collapseExample200hxn"
-                >
-                 <img src={horse_racing} alt="" className="icn_emg"/> Horse Racing
-                </button>
-                <div class="collapse" id="collapseExample200hxn">
-                  <div class="card card-body">
-                    <div className="panel-group" id="accordion">
-                      <div className="panel panel-default">
-                        <div className="panel-heading">
-                          <h4 className="panel-title">
-                            <a
-                              data-toggle="collapse"
-                              data-parent="#accordion"
-                              href="#collapseOne200alna"
-                            >
-                              <span className="glyphicon glyphicon-folder-close"></span>
-                              Assembly Election
-                            </a>
-                          </h4>
-                        </div>
-                        <div
-                          id="collapseOne200alna"
-                          className="panel-collapse collapse in"
-                        >
-                          <div className="panel-body">
-                            <table className="table">
-                              <tbody>
-                                <tr>
-                                  <td>Assembly Election 2023</td>
-                                </tr>
-                              </tbody>
-                            </table>
+                <li>
+                  <button
+                    class="btn ml-3 hxn_btn"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseExample200hxn"
+                    aria-expanded="false"
+                    aria-controls="collapseExample200hxn"
+                  >
+                    <img src={horse_racing} alt="" className="icn_emg" /> Horse
+                    Racing
+                  </button>
+                  <div class="collapse" id="collapseExample200hxn">
+                    <div class="card card-body">
+                      <div className="panel-group" id="accordion">
+                        <div className="panel panel-default">
+                          <div className="panel-heading">
+                            <h4 className="panel-title">
+                              <a
+                                data-toggle="collapse"
+                                data-parent="#accordion"
+                                href="#collapseOne200alna"
+                              >
+                                <span className="glyphicon glyphicon-folder-close"></span>
+                                Assembly Election
+                              </a>
+                            </h4>
+                          </div>
+                          <div
+                            id="collapseOne200alna"
+                            className="panel-collapse collapse in"
+                          >
+                            <div className="panel-body">
+                              <table className="table">
+                                <tbody>
+                                  <tr>
+                                    <td>Assembly Election 2023</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </li>
+                </li>
 
-              <li>
-                <button
-                  class="btn ml-3 hxn_btn"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseExample201hxn"
-                  aria-expanded="false"
-                  aria-controls="collapseExample201hxn"
-                >
-                 <img src={greyhound_racing} alt="" className="icn_emg"/> Greyhound Racing
-                </button>
-                <div class="collapse" id="collapseExample201hxn">
-                  <div class="card card-body">
-                    <div className="panel-group" id="accordion">
-                      <div className="panel panel-default">
-                        <div className="panel-heading">
-                          <h4 className="panel-title">
-                            <a
-                              data-toggle="collapse"
-                              data-parent="#accordion"
-                              href="#collapseOne2002alna"
-                            >
-                              <span className="glyphicon glyphicon-folder-close"></span>
-                              T10 Xl(1)
-                            </a>
-                          </h4>
-                        </div>
-                        <div
-                          id="collapseOne2002alna"
-                          className="panel-collapse collapse in"
-                        >
-                          <div className="panel-body">
-                            <table className="table">
-                              <tbody>
-                                <tr>
-                                  <td>Assembly Election 2023</td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <a href="">
-                                      News
-                                    </a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <a href="">
-                                      Newsletters
-                                    </a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <a href="">
-                                      Comments
-                                    </a>
-                                    <span className="badge">42</span>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
+                <li>
+                  <button
+                    class="btn ml-3 hxn_btn"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseExample201hxn"
+                    aria-expanded="false"
+                    aria-controls="collapseExample201hxn"
+                  >
+                    <img src={greyhound_racing} alt="" className="icn_emg" />{" "}
+                    Greyhound Racing
+                  </button>
+                  <div class="collapse" id="collapseExample201hxn">
+                    <div class="card card-body">
+                      <div className="panel-group" id="accordion">
+                        <div className="panel panel-default">
+                          <div className="panel-heading">
+                            <h4 className="panel-title">
+                              <a
+                                data-toggle="collapse"
+                                data-parent="#accordion"
+                                href="#collapseOne2002alna"
+                              >
+                                <span className="glyphicon glyphicon-folder-close"></span>
+                                T10 Xl(1)
+                              </a>
+                            </h4>
+                          </div>
+                          <div
+                            id="collapseOne2002alna"
+                            className="panel-collapse collapse in"
+                          >
+                            <div className="panel-body">
+                              <table className="table">
+                                <tbody>
+                                  <tr>
+                                    <td>Assembly Election 2023</td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <a href="">News</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <a href="">Newsletters</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <a href="">Comments</a>
+                                      <span className="badge">42</span>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="panel panel-default">
-                        <div className="panel-heading">
-                          <h4 className="panel-title">
-                            <a
-                              data-toggle="collapse"
-                              data-parent="#accordion"
-                              href="#collapseTwo2003alna"
-                            >
-                              <span className="glyphicon glyphicon-th"></span>
-                              T10 Xl(1)
-                            </a>
-                          </h4>
-                        </div>
-                        <div
-                          id="collapseTwo2003alna"
-                          className="panel-collapse collapse"
-                        >
-                          <div className="panel-body">
-                            <table className="table">
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    <a href="">
-                                      Sydney vs Auk
-                                    </a>{" "}
-                                  </td>
-                                </tr>
-                                {/* <tr>
-              <td>
-                <a href="">Invoices</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="">Shipments</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="">Tex</a>
-              </td>
-            </tr> */}
-                              </tbody>
-                            </table>
+                        <div className="panel panel-default">
+                          <div className="panel-heading">
+                            <h4 className="panel-title">
+                              <a
+                                data-toggle="collapse"
+                                data-parent="#accordion"
+                                href="#collapseTwo2003alna"
+                              >
+                                <span className="glyphicon glyphicon-th"></span>
+                                T10 Xl(1)
+                              </a>
+                            </h4>
+                          </div>
+                          <div
+                            id="collapseTwo2003alna"
+                            className="panel-collapse collapse"
+                          >
+                            <div className="panel-body">
+                              <table className="table">
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <a href="">Sydney vs Auk</a>{" "}
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="panel panel-default">
-                        <div className="panel-heading">
-                          <h4 className="panel-title">
-                            <a
-                              data-toggle="collapse"
-                              data-parent="#accordion"
-                              href="#collapseThree2004alna"
-                            >
-                              <span className="glyphicon glyphicon-user"></span>
-                              T5 Xl
-                            </a>
-                          </h4>
-                        </div>
-                        <div
-                          id="collapseThree2004alna"
-                          className="panel-collapse collapse"
-                        >
-                          <div className="panel-body">
-                            <table className="table">
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    <a href="">GAW 11 vs TKR</a>{" "}
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
+                        <div className="panel panel-default">
+                          <div className="panel-heading">
+                            <h4 className="panel-title">
+                              <a
+                                data-toggle="collapse"
+                                data-parent="#accordion"
+                                href="#collapseThree2004alna"
+                              >
+                                <span className="glyphicon glyphicon-user"></span>
+                                T5 Xl
+                              </a>
+                            </h4>
+                          </div>
+                          <div
+                            id="collapseThree2004alna"
+                            className="panel-collapse collapse"
+                          >
+                            <div className="panel-body">
+                              <table className="table">
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <a href="">GAW 11 vs TKR</a>{" "}
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="panel panel-default">
-                        <div className="panel-heading">
-                          <h4 className="panel-title">
-                            <a
-                              data-toggle="collapse"
-                              data-parent="#accordion"
-                              href="#collapseFour2005alna"
-                            >
-                              <span className="glyphicon glyphicon-file"></span>
-                              Virtual Cricket
-                            </a>
-                          </h4>
-                        </div>
-                        <div
-                          id="collapseFour2005alna"
-                          className="panel-collapse collapse"
-                        >
-                          <div className="panel-body">
-                            <table className="table">
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    <a href="">Ind vs Pak</a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <a href="">Bng vs Nz</a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <a href="">Afg vs Nep</a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <a href="">Sa vs Wi</a>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
+                        <div className="panel panel-default">
+                          <div className="panel-heading">
+                            <h4 className="panel-title">
+                              <a
+                                data-toggle="collapse"
+                                data-parent="#accordion"
+                                href="#collapseFour2005alna"
+                              >
+                                <span className="glyphicon glyphicon-file"></span>
+                                Virtual Cricket
+                              </a>
+                            </h4>
+                          </div>
+                          <div
+                            id="collapseFour2005alna"
+                            className="panel-collapse collapse"
+                          >
+                            <div className="panel-body">
+                              <table className="table">
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <a href="">Ind vs Pak</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <a href="">Bng vs Nz</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <a href="">Afg vs Nep</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <a href="">Sa vs Wi</a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </li>
-
-            </ul>
+                </li>
+              </ul>
             </ul>
           </div>
 
@@ -465,7 +425,7 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExamplehxn"
                 >
-                 <img src={politics} alt="" className="icn_emg"/> Politics
+                  <img src={politics} alt="" className="icn_emg" /> Politics
                 </button>
                 <div class="collapse" id="collapseExamplehxn">
                   <div class="card card-body">
@@ -512,7 +472,7 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExample2hxn"
                 >
-                 <img src={cricket} alt="" className="icn_emg"/> Cricket
+                  <img src={cricket} alt="" className="icn_emg" /> Cricket
                 </button>
                 <div class="collapse" id="collapseExample2hxn">
                   <div class="card card-body">
@@ -542,23 +502,17 @@ function Dashboard() {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      News
-                                    </a>
+                                    <a href="">News</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Newsletters
-                                    </a>
+                                    <a href="">Newsletters</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Comments
-                                    </a>
+                                    <a href="">Comments</a>
                                     <span className="badge">42</span>
                                   </td>
                                 </tr>
@@ -589,26 +543,9 @@ function Dashboard() {
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Sydney vs Auk
-                                    </a>{" "}
+                                    <a href="">Sydney vs Auk</a>{" "}
                                   </td>
                                 </tr>
-                                {/* <tr>
-              <td>
-                <a href="">Invoices</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="">Shipments</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="">Tex</a>
-              </td>
-            </tr> */}
                               </tbody>
                             </table>
                           </div>
@@ -694,10 +631,6 @@ function Dashboard() {
                 </div>
               </li>
 
-
-
-
-
               <li>
                 <button
                   class="btn ml-3 hxn_btn"
@@ -707,7 +640,7 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExample3hxn"
                 >
-                 <img src={football} alt="" className="icn_emg"/> Football
+                  <img src={football} alt="" className="icn_emg" /> Football
                 </button>
                 <div class="collapse" id="collapseExample3hxn">
                   <div class="card card-body">
@@ -737,23 +670,17 @@ function Dashboard() {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      News
-                                    </a>
+                                    <a href="">News</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Newsletters
-                                    </a>
+                                    <a href="">Newsletters</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Comments
-                                    </a>
+                                    <a href="">Comments</a>
                                     <span className="badge">42</span>
                                   </td>
                                 </tr>
@@ -784,9 +711,7 @@ function Dashboard() {
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Sydney vs Auk
-                                    </a>{" "}
+                                    <a href="">Sydney vs Auk</a>{" "}
                                   </td>
                                 </tr>
                               </tbody>
@@ -874,8 +799,6 @@ function Dashboard() {
                 </div>
               </li>
 
-
-
               <li>
                 <button
                   class="btn ml-3 hxn_btn"
@@ -885,7 +808,7 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExample4hxn"
                 >
-                 <img src={tennis} alt="" className="icn_emg"/> Tennis
+                  <img src={tennis} alt="" className="icn_emg" /> Tennis
                 </button>
                 <div class="collapse" id="collapseExample4hxn">
                   <div class="card card-body">
@@ -915,23 +838,17 @@ function Dashboard() {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      News
-                                    </a>
+                                    <a href="">News</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Newsletters
-                                    </a>
+                                    <a href="">Newsletters</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Comments
-                                    </a>
+                                    <a href="">Comments</a>
                                     <span className="badge">42</span>
                                   </td>
                                 </tr>
@@ -962,9 +879,7 @@ function Dashboard() {
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Sydney vs Auk
-                                    </a>{" "}
+                                    <a href="">Sydney vs Auk</a>{" "}
                                   </td>
                                 </tr>
                               </tbody>
@@ -1052,7 +967,6 @@ function Dashboard() {
                 </div>
               </li>
 
-
               <li>
                 <button
                   class="btn ml-3 hxn_btn"
@@ -1062,7 +976,8 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExample5hxn"
                 >
-                <img src={table_tennis} alt="" className="icn_emg"/> Table Tennis
+                  <img src={table_tennis} alt="" className="icn_emg" /> Table
+                  Tennis
                 </button>
                 <div class="collapse" id="collapseExample5hxn">
                   <div class="card card-body">
@@ -1092,23 +1007,17 @@ function Dashboard() {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      News
-                                    </a>
+                                    <a href="">News</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Newsletters
-                                    </a>
+                                    <a href="">Newsletters</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Comments
-                                    </a>
+                                    <a href="">Comments</a>
                                     <span className="badge">42</span>
                                   </td>
                                 </tr>
@@ -1139,9 +1048,7 @@ function Dashboard() {
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Sydney vs Auk
-                                    </a>{" "}
+                                    <a href="">Sydney vs Auk</a>{" "}
                                   </td>
                                 </tr>
                               </tbody>
@@ -1229,8 +1136,6 @@ function Dashboard() {
                 </div>
               </li>
 
-
-
               <li>
                 <button
                   class="btn ml-3 hxn_btn"
@@ -1240,7 +1145,7 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExample6hxn"
                 >
-                 <img src={basketball} alt="" className="icn_emg"/> Basketball
+                  <img src={basketball} alt="" className="icn_emg" /> Basketball
                 </button>
                 <div class="collapse" id="collapseExample6hxn">
                   <div class="card card-body">
@@ -1270,23 +1175,17 @@ function Dashboard() {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      News
-                                    </a>
+                                    <a href="">News</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Newsletters
-                                    </a>
+                                    <a href="">Newsletters</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Comments
-                                    </a>
+                                    <a href="">Comments</a>
                                     <span className="badge">42</span>
                                   </td>
                                 </tr>
@@ -1317,9 +1216,7 @@ function Dashboard() {
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Sydney vs Auk
-                                    </a>{" "}
+                                    <a href="">Sydney vs Auk</a>{" "}
                                   </td>
                                 </tr>
                               </tbody>
@@ -1407,7 +1304,6 @@ function Dashboard() {
                 </div>
               </li>
 
-
               <li>
                 <button
                   class="btn ml-3 hxn_btn"
@@ -1417,7 +1313,7 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExample7hxn"
                 >
-                 <img src={volleyball} alt="" className="icn_emg"/> Volleyball
+                  <img src={volleyball} alt="" className="icn_emg" /> Volleyball
                 </button>
                 <div class="collapse" id="collapseExample7hxn">
                   <div class="card card-body">
@@ -1447,23 +1343,17 @@ function Dashboard() {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      News
-                                    </a>
+                                    <a href="">News</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Newsletters
-                                    </a>
+                                    <a href="">Newsletters</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Comments
-                                    </a>
+                                    <a href="">Comments</a>
                                     <span className="badge">42</span>
                                   </td>
                                 </tr>
@@ -1494,9 +1384,7 @@ function Dashboard() {
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Sydney vs Auk
-                                    </a>{" "}
+                                    <a href="">Sydney vs Auk</a>{" "}
                                   </td>
                                 </tr>
                               </tbody>
@@ -1584,8 +1472,6 @@ function Dashboard() {
                 </div>
               </li>
 
-
-
               <li>
                 <button
                   class="btn ml-3 hxn_btn"
@@ -1595,7 +1481,7 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExample8hxn"
                 >
-                 <img src={snooker} alt="" className="icn_emg"/> Snooker
+                  <img src={snooker} alt="" className="icn_emg" /> Snooker
                 </button>
                 <div class="collapse" id="collapseExample8hxn">
                   <div class="card card-body">
@@ -1625,23 +1511,17 @@ function Dashboard() {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      News
-                                    </a>
+                                    <a href="">News</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Newsletters
-                                    </a>
+                                    <a href="">Newsletters</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Comments
-                                    </a>
+                                    <a href="">Comments</a>
                                     <span className="badge">42</span>
                                   </td>
                                 </tr>
@@ -1672,9 +1552,7 @@ function Dashboard() {
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Sydney vs Auk
-                                    </a>{" "}
+                                    <a href="">Sydney vs Auk</a>{" "}
                                   </td>
                                 </tr>
                               </tbody>
@@ -1762,7 +1640,6 @@ function Dashboard() {
                 </div>
               </li>
 
-
               <li>
                 <button
                   class="btn ml-3 hxn_btn"
@@ -1772,7 +1649,7 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExample8hxnice_hockey"
                 >
-                 <img src={ice_hockey} alt="" className="icn_emg"/> Ice Hockey
+                  <img src={ice_hockey} alt="" className="icn_emg" /> Ice Hockey
                 </button>
                 <div class="collapse" id="collapseExample8hxnice_hockey">
                   <div class="card card-body">
@@ -1802,23 +1679,17 @@ function Dashboard() {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      News
-                                    </a>
+                                    <a href="">News</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Newsletters
-                                    </a>
+                                    <a href="">Newsletters</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Comments
-                                    </a>
+                                    <a href="">Comments</a>
                                     <span className="badge">42</span>
                                   </td>
                                 </tr>
@@ -1849,9 +1720,7 @@ function Dashboard() {
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Sydney vs Auk
-                                    </a>{" "}
+                                    <a href="">Sydney vs Auk</a>{" "}
                                   </td>
                                 </tr>
                               </tbody>
@@ -1939,7 +1808,6 @@ function Dashboard() {
                 </div>
               </li>
 
-
               <li>
                 <button
                   class="btn ml-3 hxn_btn"
@@ -1949,7 +1817,7 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExample8hxne_games"
                 >
-                 <img src={e_games} alt="" className="icn_emg"/> E Games
+                  <img src={e_games} alt="" className="icn_emg" /> E Games
                 </button>
                 <div class="collapse" id="collapseExample8hxne_games">
                   <div class="card card-body">
@@ -1979,23 +1847,17 @@ function Dashboard() {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      News
-                                    </a>
+                                    <a href="">News</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Newsletters
-                                    </a>
+                                    <a href="">Newsletters</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Comments
-                                    </a>
+                                    <a href="">Comments</a>
                                     <span className="badge">42</span>
                                   </td>
                                 </tr>
@@ -2026,9 +1888,7 @@ function Dashboard() {
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Sydney vs Auk
-                                    </a>{" "}
+                                    <a href="">Sydney vs Auk</a>{" "}
                                   </td>
                                 </tr>
                               </tbody>
@@ -2116,7 +1976,6 @@ function Dashboard() {
                 </div>
               </li>
 
-
               <li>
                 <button
                   class="btn ml-3 hxn_btn"
@@ -2126,7 +1985,7 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExample8hxnfutsal"
                 >
-                 <img src={futsal} alt="" className="icn_emg"/> Futsal
+                  <img src={futsal} alt="" className="icn_emg" /> Futsal
                 </button>
                 <div class="collapse" id="collapseExample8hxnfutsal">
                   <div class="card card-body">
@@ -2156,23 +2015,17 @@ function Dashboard() {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      News
-                                    </a>
+                                    <a href="">News</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Newsletters
-                                    </a>
+                                    <a href="">Newsletters</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Comments
-                                    </a>
+                                    <a href="">Comments</a>
                                     <span className="badge">42</span>
                                   </td>
                                 </tr>
@@ -2203,9 +2056,7 @@ function Dashboard() {
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Sydney vs Auk
-                                    </a>{" "}
+                                    <a href="">Sydney vs Auk</a>{" "}
                                   </td>
                                 </tr>
                               </tbody>
@@ -2293,7 +2144,6 @@ function Dashboard() {
                 </div>
               </li>
 
-
               <li>
                 <button
                   class="btn ml-3 hxn_btn"
@@ -2303,7 +2153,7 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExample8hxnhandball"
                 >
-                 <img src={handball} alt="" className="icn_emg"/> Handball
+                  <img src={handball} alt="" className="icn_emg" /> Handball
                 </button>
                 <div class="collapse" id="collapseExample8hxnhandball">
                   <div class="card card-body">
@@ -2333,23 +2183,17 @@ function Dashboard() {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      News
-                                    </a>
+                                    <a href="">News</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Newsletters
-                                    </a>
+                                    <a href="">Newsletters</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Comments
-                                    </a>
+                                    <a href="">Comments</a>
                                     <span className="badge">42</span>
                                   </td>
                                 </tr>
@@ -2380,9 +2224,7 @@ function Dashboard() {
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Sydney vs Auk
-                                    </a>{" "}
+                                    <a href="">Sydney vs Auk</a>{" "}
                                   </td>
                                 </tr>
                               </tbody>
@@ -2470,7 +2312,6 @@ function Dashboard() {
                 </div>
               </li>
 
-
               <li>
                 <button
                   class="btn ml-3 hxn_btn"
@@ -2480,7 +2321,7 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExample8hxnkabaddi"
                 >
-                 <img src={kabaddi} alt="" className="icn_emg"/> Kabaddi
+                  <img src={kabaddi} alt="" className="icn_emg" /> Kabaddi
                 </button>
                 <div class="collapse" id="collapseExample8hxnkabaddi">
                   <div class="card card-body">
@@ -2510,23 +2351,17 @@ function Dashboard() {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      News
-                                    </a>
+                                    <a href="">News</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Newsletters
-                                    </a>
+                                    <a href="">Newsletters</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Comments
-                                    </a>
+                                    <a href="">Comments</a>
                                     <span className="badge">42</span>
                                   </td>
                                 </tr>
@@ -2557,9 +2392,7 @@ function Dashboard() {
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Sydney vs Auk
-                                    </a>{" "}
+                                    <a href="">Sydney vs Auk</a>{" "}
                                   </td>
                                 </tr>
                               </tbody>
@@ -2647,7 +2480,6 @@ function Dashboard() {
                 </div>
               </li>
 
-
               <li>
                 <button
                   class="btn ml-3 hxn_btn"
@@ -2657,7 +2489,7 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExample8hxnkabaddi"
                 >
-                 <img src={golf} alt="" className="icn_emg"/> Golf
+                  <img src={golf} alt="" className="icn_emg" /> Golf
                 </button>
                 <div class="collapse" id="collapseExample8hxnkabaddi">
                   <div class="card card-body">
@@ -2687,23 +2519,17 @@ function Dashboard() {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      News
-                                    </a>
+                                    <a href="">News</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Newsletters
-                                    </a>
+                                    <a href="">Newsletters</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Comments
-                                    </a>
+                                    <a href="">Comments</a>
                                     <span className="badge">42</span>
                                   </td>
                                 </tr>
@@ -2734,9 +2560,7 @@ function Dashboard() {
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Sydney vs Auk
-                                    </a>{" "}
+                                    <a href="">Sydney vs Auk</a>{" "}
                                   </td>
                                 </tr>
                               </tbody>
@@ -2833,7 +2657,8 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExample8rugby_league"
                 >
-                 <img src={rugby_league} alt="" className="icn_emg"/> Rugby League
+                  <img src={rugby_league} alt="" className="icn_emg" /> Rugby
+                  League
                 </button>
                 <div class="collapse" id="collapseExample8rugby_league">
                   <div class="card card-body">
@@ -2863,23 +2688,17 @@ function Dashboard() {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      News
-                                    </a>
+                                    <a href="">News</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Newsletters
-                                    </a>
+                                    <a href="">Newsletters</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Comments
-                                    </a>
+                                    <a href="">Comments</a>
                                     <span className="badge">42</span>
                                   </td>
                                 </tr>
@@ -2910,9 +2729,7 @@ function Dashboard() {
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Sydney vs Auk
-                                    </a>{" "}
+                                    <a href="">Sydney vs Auk</a>{" "}
                                   </td>
                                 </tr>
                               </tbody>
@@ -3000,8 +2817,6 @@ function Dashboard() {
                 </div>
               </li>
 
-
-
               <li>
                 <button
                   class="btn ml-3 hxn_btn"
@@ -3011,7 +2826,7 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExample8boxing"
                 >
-                 <img src={boxing} alt="" className="icn_emg"/> Boxing
+                  <img src={boxing} alt="" className="icn_emg" /> Boxing
                 </button>
                 <div class="collapse" id="collapseExample8boxing">
                   <div class="card card-body">
@@ -3041,23 +2856,17 @@ function Dashboard() {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      News
-                                    </a>
+                                    <a href="">News</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Newsletters
-                                    </a>
+                                    <a href="">Newsletters</a>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Comments
-                                    </a>
+                                    <a href="">Comments</a>
                                     <span className="badge">42</span>
                                   </td>
                                 </tr>
@@ -3088,9 +2897,7 @@ function Dashboard() {
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="">
-                                      Sydney vs Auk
-                                    </a>{" "}
+                                    <a href="">Sydney vs Auk</a>{" "}
                                   </td>
                                 </tr>
                               </tbody>
@@ -3178,7 +2985,6 @@ function Dashboard() {
                 </div>
               </li>
 
-
               <li>
                 <button
                   class="btn ml-3 hxn_btn"
@@ -3188,42 +2994,13 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExamplebeach_volleyball"
                 >
-                 <img src={beach_volleyball} alt="" className="icn_emg"/> Beach Volleyball
+                  <img src={beach_volleyball} alt="" className="icn_emg" />{" "}
+                  Beach Volleyball
                 </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
-              </li>
-
-
-              <li>
-                <button
-                  class="btn ml-3 hxn_btn"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseExamplebeach_volleyball"
-                  aria-expanded="false"
-                  aria-controls="collapseExamplebeach_volleyball"
-                >
-                 <img src={mixed_martial_art} alt="" className="icn_emg"/> Mixed Martial Arts
-                </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
-              </li>
-
-
-              <li>
-                <button
-                  class="btn ml-3 hxn_btn"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseExamplebeach_volleyball"
-                  aria-expanded="false"
-                  aria-controls="collapseExamplebeach_volleyball"
-                >
-                 <img src={moto_gp} alt="" className="icn_emg"/> Moto GP
-                </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
               </li>
 
               <li>
@@ -3235,10 +3012,13 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExamplebeach_volleyball"
                 >
-                 <img src={chess} alt="" className="icn_emg"/> Chess
+                  <img src={mixed_martial_art} alt="" className="icn_emg" />{" "}
+                  Mixed Martial Arts
                 </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
               </li>
 
               <li>
@@ -3250,10 +3030,12 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExamplebeach_volleyball"
                 >
-                 <img src={badminton} alt="" className="icn_emg"/> Badminton
+                  <img src={moto_gp} alt="" className="icn_emg" /> Moto GP
                 </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
               </li>
 
               <li>
@@ -3265,10 +3047,12 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExamplebeach_volleyball"
                 >
-                 <img src={cycling} alt="" className="icn_emg"/> Cycling
+                  <img src={chess} alt="" className="icn_emg" /> Chess
                 </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
               </li>
 
               <li>
@@ -3280,42 +3064,12 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExamplebeach_volleyball"
                 >
-                 <img src={moterbikes} alt="" className="icn_emg"/> moterbikes
+                  <img src={badminton} alt="" className="icn_emg" /> Badminton
                 </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
-              </li>
-
-
-              <li>
-                <button
-                  class="btn ml-3 hxn_btn"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseExamplebeach_volleyball"
-                  aria-expanded="false"
-                  aria-controls="collapseExamplebeach_volleyball"
-                >
-                 <img src={athelitics} alt="" className="icn_emg"/> Athletics
-                </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
-              </li>
-
-
-              <li>
-                <button
-                  class="btn ml-3 hxn_btn"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseExamplebeach_volleyball"
-                  aria-expanded="false"
-                  aria-controls="collapseExamplebeach_volleyball"
-                >
-                 <img src={basketball} alt="" className="icn_emg"/> Basketball
-                </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
               </li>
 
               <li>
@@ -3327,10 +3081,12 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExamplebeach_volleyball"
                 >
-                 <img src={sumo} alt="" className="icn_emg"/> Sumo
+                  <img src={cycling} alt="" className="icn_emg" /> Cycling
                 </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
               </li>
 
               <li>
@@ -3342,10 +3098,12 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExamplebeach_volleyball"
                 >
-                 <img src={virtual_sports} alt="" className="icn_emg"/> Virtual Sports
+                  <img src={moterbikes} alt="" className="icn_emg" /> moterbikes
                 </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
               </li>
 
               <li>
@@ -3357,10 +3115,12 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExamplebeach_volleyball"
                 >
-                 <img src={motor_sports} alt="" className="icn_emg"/> Motor Sports
+                  <img src={athelitics} alt="" className="icn_emg" /> Athletics
                 </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
               </li>
 
               <li>
@@ -3372,10 +3132,12 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExamplebeach_volleyball"
                 >
-                 <img src={baseball} alt="" className="icn_emg"/> Baseball
+                  <img src={basketball} alt="" className="icn_emg" /> Basketball
                 </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
               </li>
 
               <li>
@@ -3387,10 +3149,12 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExamplebeach_volleyball"
                 >
-                 <img src={rugby_union} alt="" className="icn_emg"/> Rugby Union
+                  <img src={sumo} alt="" className="icn_emg" /> Sumo
                 </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
               </li>
 
               <li>
@@ -3402,10 +3166,13 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExamplebeach_volleyball"
                 >
-                 <img src={dart} alt="" className="icn_emg"/> Darts
+                  <img src={virtual_sports} alt="" className="icn_emg" />{" "}
+                  Virtual Sports
                 </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
               </li>
 
               <li>
@@ -3417,10 +3184,13 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExamplebeach_volleyball"
                 >
-                 <img src={american_football} alt="" className="icn_emg"/> American Football
+                  <img src={motor_sports} alt="" className="icn_emg" /> Motor
+                  Sports
                 </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
               </li>
 
               <li>
@@ -3432,10 +3202,12 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExamplebeach_volleyball"
                 >
-                 <img src={soccer} alt="" className="icn_emg"/> Soccer
+                  <img src={baseball} alt="" className="icn_emg" /> Baseball
                 </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
               </li>
 
               <li>
@@ -3447,10 +3219,13 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExamplebeach_volleyball"
                 >
-                 <img src={e_games} alt="" className="icn_emg"/> Esports
+                  <img src={rugby_union} alt="" className="icn_emg" /> Rugby
+                  Union
                 </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
               </li>
 
               <li>
@@ -3462,22 +3237,90 @@ function Dashboard() {
                   aria-expanded="false"
                   aria-controls="collapseExamplebeach_volleyball"
                 >
-                 <img src={boat_racing} alt="" className="icn_emg"/> Boat Racing
+                  <img src={dart} alt="" className="icn_emg" /> Darts
                 </button>
-                <div class="collapse" id="collapseExamplebeach_volleyball">
-                </div>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                  <img src={american_football} alt="" className="icn_emg" />{" "}
+                  American Football
+                </button>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                  <img src={soccer} alt="" className="icn_emg" /> Soccer
+                </button>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                  <img src={e_games} alt="" className="icn_emg" /> Esports
+                </button>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
+              </li>
+
+              <li>
+                <button
+                  class="btn ml-3 hxn_btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExamplebeach_volleyball"
+                  aria-expanded="false"
+                  aria-controls="collapseExamplebeach_volleyball"
+                >
+                  <img src={boat_racing} alt="" className="icn_emg" /> Boat
+                  Racing
+                </button>
+                <div
+                  class="collapse"
+                  id="collapseExamplebeach_volleyball"
+                ></div>
               </li>
             </ul>
           </div>
         </nav>
 
-        {/* <Sidebar /> */}
-
-        {/* <!-- Sidebar end  -->
-	    <!-----=======body section start=======----> */}
         <div id="content">
           <div className="container">
-          <div className="row desktop_row_here_testing">
+            <div className="row  m-0 desktop_row_here_testing">
               <div className="col-md-9 FFl">
                 <div className="First_bar_main">
                   <div className="First_bar1 ">
@@ -3485,12 +3328,17 @@ function Dashboard() {
                       Upcoming <br /> Fixure
                     </div>
                     <div className="sldrr">
-                      <Vertical2/>
+                      <Vertical2 />
                     </div>
                   </div>
 
                   <div className="First_bar2">
-                    <marquee behavior="" scrollamount="4" direction="left" className="meqi">
+                    <marquee
+                      behavior=""
+                      scrollamount="4"
+                      direction="left"
+                      className="meqi"
+                    >
                       Experience the Excitement of Live Sports, Live Casinos,
                       Virtual Casinos and Fantasy Games On Our Exchange. Play
                       Now To Win Unlimited.
@@ -3507,307 +3355,279 @@ function Dashboard() {
 
                 <div className="second_bar_main">
                   <div className="dv1">
-                    <a href="" className="my-3 dv1Inner d-flex justify-content-center align-items-center gap-2">
-                      <div className="icn"><IoIosTennisball className="mnicn"/></div>
+                    <a
+                      href=""
+                      className="my-3 dv1Inner d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <div className="icn">
+                        <IoIosTennisball className="mnicn" />
+                      </div>
                       <div>
-                        <p className="mb-0 mchDtl">US Open <br /> Women 2023</p>
+                        <p className="mb-0 mchDtl">
+                          US Open <br /> Women 2023
+                        </p>
                       </div>
                     </a>
                   </div>
                   <div className="dv1">
-                    <a href="" className="my-3 dv1Inner d-flex justify-content-center align-items-center gap-2">
-                      <div className="icn"><IoIosTennisball className="mnicn"/></div>
+                    <a
+                      href=""
+                      className="my-3 dv1Inner d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <div className="icn">
+                        <IoIosTennisball className="mnicn" />
+                      </div>
                       <div>
-                        <p className="mb-0 mchDtl">US Open <br /> Men 2023</p>
+                        <p className="mb-0 mchDtl">
+                          US Open <br /> Men 2023
+                        </p>
                       </div>
                     </a>
                   </div>
                   <div className="dv1 basketball">
-                    <a href="" className="my-3 dv1Inner d-flex justify-content-center align-items-center gap-2">
-                      <div className="icn"><FaBasketballBall className="mnicn"/></div>
+                    <a
+                      href=""
+                      className="my-3 dv1Inner d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <div className="icn">
+                        <FaBasketballBall className="mnicn" />
+                      </div>
                       <div>
-                        <p className="mb-0 mchDtl">FIBA World <br /> Cup 2023</p>
+                        <p className="mb-0 mchDtl">
+                          FIBA World <br /> Cup 2023
+                        </p>
                       </div>
                     </a>
                   </div>
                   <div className="dv1 cricket">
-                    <a href="" className="my-3 dv1Inner d-flex justify-content-center align-items-center gap-2">
-                      <div className="icn"><MdSportsCricket className="mnicn"/></div>
+                    <a
+                      href=""
+                      className="my-3 dv1Inner d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <div className="icn">
+                        <MdSportsCricket className="mnicn" />
+                      </div>
                       <div>
-                        <p className="mb-0 mchDtl">Pakistan <br /> Women 2023</p>
+                        <p className="mb-0 mchDtl">
+                          Pakistan <br /> Women 2023
+                        </p>
                       </div>
                     </a>
                   </div>
                   <div className="dv1 football">
-                    <a href="" className="my-3 dv1Inner d-flex justify-content-center align-items-center gap-2">
-                      <div className="icn"><BiFootball className="mnicn"/></div>
+                    <a
+                      href=""
+                      className="my-3 dv1Inner d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <div className="icn">
+                        <BiFootball className="mnicn" />
+                      </div>
                       <div>
-                        <p className="mb-0 mchDtl">Georgia vs <br /> Spain</p>
+                        <p className="mb-0 mchDtl">
+                          Georgia vs <br /> Spain
+                        </p>
                       </div>
                     </a>
                   </div>
                 </div>
 
                 <div className="MatchSlider_Bar">
-                  <DashboardMatch_Slider/>
+                  <DashboardMatch_Slider />
                 </div>
 
                 <div className="Match_detailsTab">
-                  <DashboardMatchDetail_Tab/>
+                  <DashboardMatchDetail_Tab />
                 </div>
-                
-                {/* table  */}
 
                 <footer className="footer">
-  {/**/} {/**/}{" "}
-  <div className="support">
-    <div>
-      <div className="w-100 text-center">
-        <b>24X7 Support</b>
-      </div>{" "}
-      <div className="text-center w-100">{/**/}</div>
-    </div>{" "}
-    <div className="footer-social">
-      <a href="https://wa.me/+917517849541" target="_blank">
-        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/whatsapp.png" />
-      </a>{" "}
-      <a
-        href="https://www.facebook.com/Veronica777-111522977707208"
-        target="_blank"
-      >
-        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/facebook.png" />
-      </a>{" "}
-      <a
-        href="https://instagram.com/veronica_7_7_7?igshid=1wz9bjrzbqtdp"
-        target="_blank"
-      >
-        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/instagram.png" />
-      </a>{" "}
-      <a href="https://t.me/veronica777T" target="_blank">
-        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/telegram.png" />
-      </a>{" "}
-      <a href="https://twitter.com/VERONICA77713" target="_blank">
-        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/twitter.png" />
-      </a>{" "}
-      <a
-        href="https://www.youtube.com/channel/UCBNf7RhPm-lKzxwYFTu8vBQ"
-        target="_blank"
-      >
-        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/youtube.png" />
-      </a>{" "}
-      <a href="undefined" target="_blank">
-        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/news.png" />
-      </a>
-    </div>
-  </div>{" "}
-  <div className="footer-menu">
-    <ul>
-      <li>
-        <a href="/about-us" className="" target="_blank">
-          About Us
-        </a>
-      </li>{" "}
-      <li>
-        <a href="/faq" className="">
-          FAQ
-        </a>
-      </li>{" "}
-      <li>
-        <a href="javascript:void(0);">Rules</a>
-      </li>{" "}
-      <li>
-        <a href="/terms-and-conditions" className="" target="_blank">
-          Terms and Conditions
-        </a>
-      </li>{" "}
-      <li>
-        <a href="/responsible-gaming" className="" target="_blank">
-          Responsible Gaming
-        </a>
-      </li>{" "}
-      {/**/}
-    </ul>
-  </div>{" "}
-  <div className="footer-box">
-    <div className="footer-top">
-      <div className="secure-logo">
-        <div>
-          <img src="https://wver.sprintstaticdata.com/v14/static/front/img/ssl.png" />
-        </div>{" "}
-        <div className="ml-2">
-          <b>100% SAFE</b> <div>Protected connection and encrypted data.</div>
-        </div>
-      </div>{" "}
-      <div className="d-inline-block footer-other">
-        <a href="javascript:void(0)" role="button">
-          <img src="https://wver.sprintstaticdata.com/v14/static/front/img/18plus.png" />
-        </a>{" "}
-        <a href="https://www.gamcare.org.uk/" target="_blank">
-          <img src="https://wver.sprintstaticdata.com/v14/static/front/img/gamecare.png" />
-        </a>{" "}
-        <a href="https://www.gamblingtherapy.org/en" target="_blank">
-          <img src="https://wver.sprintstaticdata.com/v14/static/front/img/gt.png" />
-        </a>{" "}
-        {/**/} {/**/}
-      </div>
-    </div>{" "}
-    <div className="footer-bottom">{/**/}</div>
-  </div>{" "}
-  <div className="text-center mt-1 w-100 copyright">
-    © Copyright 2020. All Rights Reserved.
-  </div>{" "}
-  {/**/} {/**/} {/**/}
-</footer>
-
-
-                {/* <div class="games_images">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-2">
-                        <div class="img_item">
-                          <a>
-                            <img src="/assets/images/games/1.jpg" />
-                          </a>
+                  <div className="support">
+                    <div>
+                      <div className="w-100 text-center">
+                        <b>24X7 Support</b>
+                      </div>{" "}
+                      <div className="text-center w-100"></div>
+                    </div>{" "}
+                    {/* <div className="footer-social">
+                      <a href="https://wa.me/+917517849541" target="_blank">
+                        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/whatsapp.png" />
+                      </a>{" "}
+                      <a
+                        href="https://www.facebook.com/Veronica777-111522977707208"
+                        target="_blank"
+                      >
+                        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/facebook.png" />
+                      </a>{" "}
+                      <a
+                        href="https://instagram.com/veronica_7_7_7?igshid=1wz9bjrzbqtdp"
+                        target="_blank"
+                      >
+                        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/instagram.png" />
+                      </a>{" "}
+                      <a href="https://t.me/veronica777T" target="_blank">
+                        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/telegram.png" />
+                      </a>{" "}
+                      <a
+                        href="https://twitter.com/VERONICA77713"
+                        target="_blank"
+                      >
+                        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/twitter.png" />
+                      </a>{" "}
+                      <a
+                        href="https://www.youtube.com/channel/UCBNf7RhPm-lKzxwYFTu8vBQ"
+                        target="_blank"
+                      >
+                        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/youtube.png" />
+                      </a>{" "}
+                      <a href="undefined" target="_blank">
+                        <img src="https://wver.sprintstaticdata.com/v14/static/front/img/home-banners/social/news.png" />
+                      </a>
+                    </div> */}
+                  </div>{" "}
+                  <div className="footer-menu">
+                    <ul>
+                      <li>
+                        <a href="/about-us" className="" target="_blank">
+                          About Us
+                        </a>
+                      </li>{" "}
+                      <li>
+                        <a href="/faq" className="">
+                          FAQ
+                        </a>
+                      </li>{" "}
+                      <li>
+                        <a href="javascript:void(0);">Rules</a>
+                      </li>{" "}
+                      <li>
+                        <a
+                          href="/terms-and-conditions"
+                          className=""
+                          target="_blank"
+                        >
+                          Terms and Conditions
+                        </a>
+                      </li>{" "}
+                      <li>
+                        <a
+                          href="/responsible-gaming"
+                          className=""
+                          target="_blank"
+                        >
+                          Responsible Gaming
+                        </a>
+                      </li>{" "}
+                      {/**/}
+                    </ul>
+                  </div>{" "}
+                  <div className="footer-box">
+                    <div className="footer-top">
+                      <div className="secure-logo">
+                        <div>
+                          <img src="https://wver.sprintstaticdata.com/v14/static/front/img/ssl.png" />
+                        </div>{" "}
+                        <div className="ml-2">
+                          <b>100% SAFE</b>{" "}
+                          <div>Protected connection and encrypted data.</div>
                         </div>
+                      </div>{" "}
+                      <div className="d-inline-block footer-other">
+                        <a href="javascript:void(0)" role="button">
+                          <img src="https://wver.sprintstaticdata.com/v14/static/front/img/18plus.png" />
+                        </a>{" "}
+                        <a href="https://www.gamcare.org.uk/" target="_blank">
+                          <img src="https://wver.sprintstaticdata.com/v14/static/front/img/gamecare.png" />
+                        </a>{" "}
+                        <a
+                          href="https://www.gamblingtherapy.org/en"
+                          target="_blank"
+                        >
+                          <img src="https://wver.sprintstaticdata.com/v14/static/front/img/gt.png" />
+                        </a>{" "}
                       </div>
-                      <div class="col-md-2">
-                        <div class="img_item">
-                          <a>
-                            <img src="/assets/images/games/2.png" />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="img_item">
-                          <a>
-                            <img src="/assets/images/games/3.jpg" />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="img_item">
-                          <a>
-                            <img src="/assets/images/games/4.jpg" />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="img_item">
-                          <a>
-                            <img src="/assets/images/games/5.jpg" />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="img_item">
-                          <a>
-                            <img src="/assets/images/games/6.jpg" />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="img_item">
-                          <a>
-                            <img src="/assets/images/games/7.jpg" />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="img_item">
-                          <a>
-                            <img src="/assets/images/games/8.png" />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="img_item">
-                          <a>
-                            <img src="/assets/images/games/9.jpg" />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="img_item">
-                          <a>
-                            <img src="/assets/images/games/10.jpg" />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="img_item">
-                          <a>
-                            <img src="/assets/images/games/11.jpg" />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="img_item">
-                          <a>
-                            <img src="/assets/images/games/12.jpg" />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+                    </div>{" "}
+                    <div className="footer-bottom">{/**/}</div>
+                  </div>{" "}
+                  <div className="text-center mt-1 w-100 copyright">
+                    © Copyright 2020. All Rights Reserved.
+                  </div>{" "}
+                </footer>
               </div>
               <div className="col-lg-3 left_imgesa ps-0">
-                {/* <div className="uPPerBarRT">
-                  <div className="lftsD">
-                    <div className="fwlltBck d-flex align-items-center">
-                      <FaWallet className="wallt" />
-                    </div>
-                    <div className="text-end">
-                      <p className="mb-0 writpts">pts: : 1500</p>
-                      <p className="mb-0 writpts">exp: 0</p>
+                <div className="to_btn_here d-flex gap-2 justify-content-around">
+                  <div className="wallet text-end d-flex gap-1">
+                    <div className="icons_daskPDa">
+                      {" "}
+                      <FaWallet></FaWallet>
+                    </div>{" "}
+                    <div>
+                      <span>pts::1500</span> <br />
+                      <span>exp:0</span>
                     </div>
                   </div>
-
-                  <div className="rigtsD">
-                    <div className="lftsD">
-                      <div className="fwlltBck d-flex align-items-center">
-                        <BiUser className="wallt" />
-                      </div>
-                      <div className="">
-                        <Dropdown>
-                          <Dropdown.Toggle
-                            id="dropdown-basic"
-                            className="dmoBtnn"
-                          >
-                            Demo
-                          </Dropdown.Toggle>
-
-                          <Dropdown.Menu>
-                            <Dropdown.Item className="drpitm" href="#/action-1">
+                  <div className="wallet text-end d-flex gap-1">
+                    <div className="icons_daskPDa">
+                      {" "}
+                      <FaUserAlt></FaUserAlt>
+                    </div>{" "}
+                    <div>
+                      <div className="dropdown">
+                        <button
+                          className="btn New_das_bord_drop dropdown-toggle"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Demo
+                        </button>
+                        <ul
+                          className="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a className="dropdown-item" href="#">
                               Account Statement
-                            </Dropdown.Item>
-                            <Dropdown.Item className="drpitm" href="#/action-2">
+                            </a>
+                          </li>
+                          <li>
+                            <a className="dropdown-item" href="#">
                               Current Bets
-                            </Dropdown.Item>
-                            <Dropdown.Item className="drpitm" href="#/action-3">
-                              Casino Results
-                            </Dropdown.Item>
-                            <Dropdown.Item className="drpitm" href="#/action-4">
+                            </a>
+                          </li>
+                          <li>
+                            <a className="dropdown-item" href="#">
+                              {" "}
+                              Casion Results
+                            </a>
+                          </li>
+                          <li>
+                            <a className="dropdown-item" href="#">
+                              {" "}
                               Set Button Value
-                            </Dropdown.Item>
-                          </Dropdown.Menu>
-                        </Dropdown>
+                            </a>
+                          </li>
+                          <li>
+                            <a className="dropdown-item" href="#">
+                              {" "}
+                              Logout
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
-                </div> */}
-
+                </div>
                 <div className="rightSliDr text-danger">
                   <>
-                  <Vertical/>
+                    <Vertical />
                   </>
                 </div>
               </div>
-            </div>
+                        
+            </div>
           </div>
         </div>
-        {/* <!-----=======body section end=========----> */}
-      </main>
+      </div>
     </div>
   );
 }

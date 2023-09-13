@@ -1,0 +1,29 @@
+.new_table{
+    color: #AAAFB5 !important;
+}
+
+.table thead th{
+    border-bottom: none !important;
+}
+
+.Today{
+    color: #AAAFB5 !important;
+}
+
+.clr_the{
+    color: #AAAFB5 !important;
+
+}
+
+
+.borber{
+    border-bottom: 1px solid #AAAFB5 !important;
+}
+
+.table>:not(caption)>*>* {
+    padding: 0.5rem 0.5rem;
+    color: var(--bs-table-color-state,var(--bs-table-color-type,var(--bs-table-color)));
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 0px !important;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state,var(--bs-table-bg-type,var(--bs-table-accent-bg)));
+}
