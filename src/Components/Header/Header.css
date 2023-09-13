@@ -67,7 +67,7 @@
     }
 
     .head_box {
-        height: 9rem;
+        height: 5rem;
 
     }
 
@@ -163,7 +163,7 @@ a{
 
 @media screen and (max-width: 999px) {
     .header_menu{
-        margin-top: 50px;
+        margin-top: 27px;
         padding-top: 10px;
         padding-bottom: 0;
     }

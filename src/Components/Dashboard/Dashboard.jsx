@@ -7,6 +7,7 @@ import moment from "moment/moment";
 import "./Dashboard.css";
 import tv from "./tv-solid.svg";
 import Sidebar from "./Sidebar";
+import {BsArrowDown} from "react-icons/bs"
 import cricket from "../../icoons/cricket.png";
 import football from "../../icoons/football.png";
 import tennis from "../../icoons/tennis.png";
@@ -54,6 +55,7 @@ import { BiFootball } from "react-icons/bi";
 import DashboardMatch_Slider from "../DashboardMatch_Slider/DashboardMatch_Slider";
 import DashboardMatchDetail_Tab from "../DashboardMatchDetail_Tab/DashboardMatchDetail_Tab";
 import logo from "../Assets/battle_money.png";
+import Dashboard_mobile_slider from "../Dashboard_mobile_slider/Dashboard_mobile_slider";
 
 //import io from "socket.io-client";
 
@@ -3319,7 +3321,7 @@ function Dashboard() {
         </nav>
 
         <div id="content">
-          <div className="container">
+          <div className="container px-1">
             <div className="row  m-0 desktop_row_here_testing">
               <div className="col-md-9 FFl">
                 <div className="First_bar_main">
@@ -3431,12 +3433,32 @@ function Dashboard() {
                   </div>
                 </div>
 
+
+
+
+              <div className="currnt d-flex justify-content-center d-lg-none">
+                <button className="curenn"> <BsArrowDown/>Current Activities</button>
+              </div>
+              <div  className=" d-flex justify-content-center d-lg-none">
+            
+              <ul className="mbl_row">
+              <li>   <p className="mbl_list mb-0">Lottrry</p></li>
+              <li>   <p className="mbl_list mb-0">SportBook1</p></li>
+              <li>   <p className="mbl_list mb-0">Exchange</p></li>
+              <li>   <p className="mbl_list mb-0">Live Casino</p></li>
+              <li>   <p className="mbl_list mb-0">Slot</p></li>
+              <li>   <p className="mbl_list mb-0">Fantasy  Games</p></li>
+              </ul>
+
+              </div>
+
                 <div className="MatchSlider_Bar">
                   <DashboardMatch_Slider />
                 </div>
 
                 <div className="Match_detailsTab">
                   <DashboardMatchDetail_Tab />
+              <Dashboard_mobile_slider/>
                 </div>
 
                 <footer className="footer">
@@ -3552,8 +3574,8 @@ function Dashboard() {
                   </div>{" "}
                 </footer>
               </div>
-              <div className="col-lg-3 left_imgesa ps-0">
-                <div className="to_btn_here d-flex gap-2 justify-content-around">
+              <div className="col-lg-3 d-none d-lg-block left_imgesa ps-0">
+                <div className="to_btn_here d-lg-flex gap-2 justify-content-around d-none">
                   <div className="wallet text-end d-flex gap-1">
                     <div className="icons_daskPDa">
                       {" "}

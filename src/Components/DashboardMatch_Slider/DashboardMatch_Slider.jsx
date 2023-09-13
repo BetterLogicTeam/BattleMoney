@@ -13,7 +13,7 @@ import dash2 from "../Assets/dash2.png"
 
 function DashboardMatch_Slider() {
   return (
-    <div>
+    <div className="d-none d-lg-block">
       <>
         <Swiper
         slidesPerView={1}

@@ -24,7 +24,7 @@ export default class VerticalSwipeToSlide extends Component {
       }
     };
     return (
-      <div className="mt-3 rightSldR">
+      <div className="mt-3  rightSldR">
         <Slider {...settings}>
           <div className="text-center">
             <div>

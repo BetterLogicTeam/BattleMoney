@@ -153,7 +153,7 @@ function Navbar({ updateBal }) {
               </div>
             </div>
             <div className="col-6 ">
-              <div className="mt-5 text-end">
+              <div className="mt-1 text-end">
                 <span className="mobile_version_pts">pts:1500|0</span> <br />
                 <div className=" text-end ">
                 
